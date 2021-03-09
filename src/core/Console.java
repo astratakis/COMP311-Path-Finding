@@ -14,6 +14,8 @@ public class Console {
 		
 		ProblemInstance pi = new ProblemInstance(scanner);
 		System.out.println(pi);
+		
+		scanner.close();
 	}
 
 }

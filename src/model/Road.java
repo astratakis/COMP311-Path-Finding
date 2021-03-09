@@ -14,5 +14,10 @@ public class Road {
 	final Node end;
 	final int weight;
 	int virtualWeight;
+	
+	@Override
+	public String toString() {
+		return name + " \t" + start + " \t" + end + " \t" + weight;
+	}
 
 }
