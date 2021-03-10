@@ -17,7 +17,7 @@ public class Road {
 	
 	@Override
 	public String toString() {
-		return name + " \t" + start + " \t" + end + " \t" + weight;
+		return name + "  \t" + start + " \t" + end + " \t" + weight;
 	}
 
 }

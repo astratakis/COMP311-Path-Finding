@@ -1,13 +1,19 @@
 package model;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ProblemInstance {
 	
 	public ProblemInstance(Scanner scanner) throws IllegalArgumentException {
 		Pattern p = Pattern.compile("(<.+>)(.*)(</.+>)");
 		Matcher m = p.matcher(scanner.next());
+		
+		String source, destination;
 				
 		if (m.matches())
 			source = m.group(2);
@@ -24,31 +30,15 @@ public class ProblemInstance {
 		scanner.next();			// Consume the next String
 		scanner.nextLine();		// Consume the next /n char
 		
-		String line = scanner.nextLine();
+		graph = new Graph(scanner);
 		
-		nodes = new HashMap<String, Node>();
-		roads = new HashMap<String, Road>();
-		
-		while (!line.contentEquals("</Roads>")) {
-			
-			String[] arr = line.split("; ");
-			
-			if (!nodes.containsKey(arr[1])) {
-				nodes.put(arr[1], new Node(arr[1]));
-			}
-			if (!nodes.containsKey(arr[2])) {
-				nodes.put(arr[2], new Node(arr[2]));
-			}
-			
-			roads.put(arr[0], new Road(arr[1], nodes.get(arr[1]), nodes.get(arr[2]), Integer.parseInt(arr[3])));
-			line = scanner.nextLine();
-		}
+		this.source = graph.nodes.get(source);
+		this.destination = graph.nodes.get(destination);
 	}
 	
-	public final String source;
-	public final String destination;
-	Map<String, Road> roads;
-	Map<String, Node> nodes;
+	final Node source;
+	final Node destination;
+	final Graph graph;
 	
 	@Override
 	public String toString() {
@@ -59,13 +49,22 @@ public class ProblemInstance {
 		buffer.append("Destination: " + destination + "\n");
 		buffer.append("\n=================================\n\n");
 		
-		for (Road r : roads.values()) {
-			buffer.append(r + "\n");
-		}
+		buffer.append(graph);
 		return buffer.toString();
 	}
 	
-	public void simulate() {
+	public void simulate(Algorithms alg) {
+		switch (alg) {
 		
+		case BREADTH_FIRST_SEARCH:
+			break;
+		
+		default: 
+			break;
+		}
+	}
+	
+	public void export() throws IOException {
+		PrintWriter pr = new PrintWriter(new File("output" + File.separator + "output.txt"));
 	}
 }
