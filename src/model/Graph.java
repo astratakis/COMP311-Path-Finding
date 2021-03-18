@@ -24,8 +24,20 @@ public class Graph {
 			}
 			
 			roads.put(arr[0], new Road(arr[0], nodes.get(arr[1]), nodes.get(arr[2]), Integer.parseInt(arr[3])));
+			
+			Node start = nodes.get(arr[1]);
+			Node end = nodes.get(arr[2]);
+			
+			
+			start.neighbors.put(roads.get(arr[0]),end);
+			
+			end.neighbors.put(roads.get(arr[0]),start);
+			
+		
 			line = scanner.nextLine();
 		}
+		
+		
 		
 		scanner.nextLine();
 	}
