@@ -116,7 +116,12 @@ public class ProblemInstance {
 		case DIJKSTRA:
 			dijkstra(graph, source, destination);
 			break;
+		case UNIFORM_COST_SEARCH:
+			break;
+		case BREADTH_FIRST_SEARCH:
+			break;
 		
+			
 		default: 
 			break;
 		}
@@ -129,10 +134,46 @@ public class ProblemInstance {
 	 */
 	public void dijkstra(Graph g, Node source, Node destination) {
 		
-				
-		
-		
+		double totalDistranceTraveled = 0.0;
+		Node curNode = source;
 	}
+	
+	public LinkedList<Road> ucs(Graph g, Node source, Node destination) {
+		
+		double totalCost = 0.0;
+		Node curNode = source;
+		
+		LinkedList<Node> frontier = new LinkedList<Node>();
+		HashSet<Node> explored = new HashSet<Node>();
+		LinkedList<Road> path = new LinkedList<Road>();
+		
+		frontier.add(curNode);
+		
+		while(true) {
+			
+			if(frontier.isEmpty()) {
+				return null;
+			}
+			
+			curNode = frontier.pop();
+			
+			if(curNode.equals(destination)) {
+				return path;
+			}
+			
+			explored.add(curNode);
+			
+			for(Road r : curNode.neighbors.keySet()) {
+				if(!explored.contains(curNode.neighbors.get(r))) {
+					
+					frontier.add(curNode.neighbors.get(r));
+				}
+			}
+		}
+	}
+	
+	
+	public void bfs()
 	
 	public void export() throws IOException {
 		PrintWriter pr = new PrintWriter(new File("output" + File.separator + "output.txt"));
