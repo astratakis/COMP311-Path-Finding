@@ -138,7 +138,7 @@ public class ProblemInstance {
 		Node curNode = source;
 	}
 	
-	public LinkedList<Road> ucs(Graph g, Node source, Node destination) {
+	public LinkedList<Road> ucs(Day d, Graph g, Node source, Node destination) {
 		
 		double totalCost = 0.0;
 		Node curNode = source;
@@ -162,7 +162,7 @@ public class ProblemInstance {
 			}
 			
 			explored.add(curNode);
-			
+					
 			for(Road r : curNode.neighbors.keySet()) {
 				if(!explored.contains(curNode.neighbors.get(r))) {
 					
@@ -173,7 +173,9 @@ public class ProblemInstance {
 	}
 	
 	
-	public void bfs()
+	public void bfs() {
+		
+	}
 	
 	public void export() throws IOException {
 		PrintWriter pr = new PrintWriter(new File("output" + File.separator + "output.txt"));
