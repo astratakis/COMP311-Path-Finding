@@ -34,13 +34,30 @@ public class ProblemInstance {
 		
 		this.source = graph.nodes.get(source);
 		this.destination = graph.nodes.get(destination);
+		
+		days = new ArrayList<Day>();
+		
+		int dayID = 0;
+		
+		while (true) {
+			
+			try {
+				Day d = new Day(dayID++, graph, scanner);
+				days.add(d);
+			}
+			catch (Exception e) {
+				break;
+			}
+		}
+		
+		System.out.println(days.size());
 	}
 	
 	final Node source;
 	final Node destination;
 	final Graph graph;
 	
-	
+	final List<Day> days;
 	
 	@Override
 	public String toString() {

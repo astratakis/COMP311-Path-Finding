@@ -28,7 +28,6 @@ public class Graph {
 		}
 		
 		scanner.nextLine();
-		scanner.nextLine();
 	}
 	
 	Map<String, Road> roads;

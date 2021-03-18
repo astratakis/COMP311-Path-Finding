@@ -13,7 +13,6 @@ public class Road {
 	final Node start;
 	final Node end;
 	final int weight;
-	int virtualWeight;
 	
 	@Override
 	public String toString() {
