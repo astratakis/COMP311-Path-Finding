@@ -50,7 +50,45 @@ public class ProblemInstance {
 			}
 		}
 		
-		System.out.println(days.size());
+		for (int i=0; i<days.size(); i++) {
+			
+			String line = scanner.nextLine(); // Consume <Day>
+			
+			while (true) {
+				line = scanner.nextLine();
+				
+				if (line.contentEquals("</Day>")) {
+					break;
+				}
+				
+				String[] arr = line.split(";");
+				
+				Road r = graph.roads.get(arr[0]);
+				
+				Double virtualWeight  = 0.0;
+				
+				switch (arr[1].trim()) {
+				
+				case "low":
+					// -10%
+					virtualWeight = r.weight - 0.1 * r.weight;
+					break;
+				case "normal":
+					virtualWeight = 1.0 * r.weight;
+					break;
+				case "heavy":
+					// +25%
+					virtualWeight = r.weight + 0.25 * r.weight;
+					break;
+				default:
+					throw new Error("Should not reach this...");
+				}
+				
+				days.get(i).actual.put(arr[0], virtualWeight);
+			}
+		}
+		
+		scanner.close();
 	}
 	
 	final Node source;

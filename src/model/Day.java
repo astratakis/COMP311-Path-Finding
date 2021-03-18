@@ -16,6 +16,7 @@ public class Day {
 		String line = scanner.nextLine();	// Consume <Day>
 		
 		predictions = new HashMap<String, Double>();
+		actual = new HashMap<String, Double>();
 		
 		while (true) {
 			
@@ -59,7 +60,7 @@ public class Day {
 		buffer.append("Day: " + ID + "\n----------------\n\n");
 		
 		for (String key : predictions.keySet()) {
-			buffer.append(key + " -> " + predictions.get(key) + "\n");
+			buffer.append(key + " -> Predicted: " + predictions.get(key) + " Actual: " + actual.get(key) + "\n");
 		}
 		
 		return buffer.toString();
