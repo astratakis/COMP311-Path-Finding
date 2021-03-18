@@ -26,6 +26,9 @@ public class Graph {
 			roads.put(arr[0], new Road(arr[0], nodes.get(arr[1]), nodes.get(arr[2]), Integer.parseInt(arr[3])));
 			line = scanner.nextLine();
 		}
+		
+		scanner.nextLine();
+		scanner.nextLine();
 	}
 	
 	Map<String, Road> roads;

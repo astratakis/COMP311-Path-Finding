@@ -40,6 +40,8 @@ public class ProblemInstance {
 	final Node destination;
 	final Graph graph;
 	
+	
+	
 	@Override
 	public String toString() {
 		StringBuilder buffer = new StringBuilder();
@@ -57,7 +59,7 @@ public class ProblemInstance {
 		switch (alg) {
 		
 		case DIJKSTRA:
-			dijkstra(graph,source,destination);
+			dijkstra(graph, source, destination);
 			break;
 		
 		default: 

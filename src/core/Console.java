@@ -17,7 +17,6 @@ public class Console {
 		}
 		catch (IndexOutOfBoundsException e) {
 			scanner = new Scanner(new File("src" + File.separator + "input" + File.separator + INPUT_FILE));
-
 		}
 		
 		ProblemInstance pi = new ProblemInstance(scanner);
