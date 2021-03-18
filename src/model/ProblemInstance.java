@@ -56,12 +56,25 @@ public class ProblemInstance {
 	public void simulate(Algorithms alg) {
 		switch (alg) {
 		
-		case BREADTH_FIRST_SEARCH:
+		case DIJKSTRA:
+			dijkstra(graph,source,destination);
 			break;
 		
 		default: 
 			break;
 		}
+	}
+	
+	/**
+	 * Shortest Path Search Algorithm (Dijkstra)
+	 * @param g
+	 * @param source
+	 */
+	public void dijkstra(Graph g, Node source, Node destination) {
+		
+				
+		
+		
 	}
 	
 	public void export() throws IOException {
