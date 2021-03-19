@@ -20,7 +20,6 @@ public class Console {
 		}
 		
 		ProblemInstance pi = new ProblemInstance(scanner);
-		
 		scanner.close();
 	}
 

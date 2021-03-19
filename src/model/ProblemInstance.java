@@ -89,6 +89,8 @@ public class ProblemInstance {
 		}
 		
 		scanner.close();
+		
+		simulate(Algorithms.BREADTH_FIRST_SEARCH);
 	}
 	
 	final Node source;
@@ -117,11 +119,11 @@ public class ProblemInstance {
 			dijkstra(graph, source, destination);
 			break;
 		case UNIFORM_COST_SEARCH:
+			ucs(days.get(0),graph,source,destination);
 			break;
 		case BREADTH_FIRST_SEARCH:
+			bfs(graph,source,destination,days.get(0));
 			break;
-		
-			
 		default: 
 			break;
 		}
@@ -150,31 +152,129 @@ public class ProblemInstance {
 		frontier.add(curNode);
 		
 		while(true) {
-			
+			System.out.println("-->Exploring :"+curNode.name);
 			if(frontier.isEmpty()) {
-				return null;
+				break;
 			}
 			
 			curNode = frontier.pop();
 			
 			if(curNode.equals(destination)) {
-				return path;
+				break;
 			}
 			
 			explored.add(curNode);
 					
 			for(Road r : curNode.neighbors.keySet()) {
-				if(!explored.contains(curNode.neighbors.get(r))) {
-					
+				
+				Node child = curNode.neighbors.get(r);
+				r.tmpPredictedWeight = d.predictions.get(r.name);
+				r.tmpActualWeight = d.actual.get(r.name);
+				
+				if(!explored.contains(child) && !frontier.contains(child)) {		
 					frontier.add(curNode.neighbors.get(r));
+				}else if(frontier.contains(child)){
+									
 				}
 			}
 		}
+		
+		return path;
 	}
 	
 	
-	public void bfs() {
+	public LinkedList<Node> bfs(Graph graph, Node source, Node destination, Day d) {
 		
+		LinkedList<Node> queue = new LinkedList<Node>();
+		LinkedList<Node> path = new LinkedList<Node>();
+		HashSet<Node> explored = new HashSet<Node>();
+		LinkedList<Node> spt = new LinkedList<Node>();
+		
+		path.add(source);
+		queue.add(source);
+		explored.add(source);
+		
+		Node curNode;
+		
+		while(!queue.isEmpty()) {
+			curNode = queue.pop();
+		
+			for(Node n: curNode.neighbors.values()) {
+				
+				if(!explored.contains(n)){
+					queue.add(n);
+					explored.add(n);
+					path.add(n);
+					
+					if(curNode.equals(destination)) {	
+						break;
+					}
+				}
+			}
+		}
+		
+		for(Node n : path) {
+			System.out.println(n.name);
+		}
+		
+		Node currentSrc = destination;
+		spt.add(destination);
+		
+		while(!path.isEmpty()) {
+			curNode = path.get(path.size()-1);
+			path.remove(curNode);
+			
+			if(currentSrc.neighbors.containsValue(curNode)) {
+				spt.add(curNode);
+				currentSrc = curNode;
+				
+				if(curNode.equals(source)){
+					break;
+				}
+			}
+			
+		}
+		
+		System.out.println("------------------------SPT---------------------------");
+		
+		for(Node n : spt) {
+			System.out.println(n.name);
+		}
+		
+	
+		System.out.println("-------------------------SPT ROADS--------------------------");
+
+		LinkedList<Road> roadPath = findRoadPath(spt);
+		
+		for(Road r: roadPath) {
+			System.out.println(r);
+		}
+				
+		return spt;		
+	}
+	
+	public LinkedList<Road> findRoadPath(LinkedList<Node> nodePath){
+		
+		LinkedList<Road> roadPath = new LinkedList<Road>();
+		
+		for(int i=0; i<nodePath.size(); i++) {
+			
+			if(nodePath.isEmpty() || i+1 >= nodePath.size()) {
+				break;
+			}
+			
+			Node n1 = nodePath.get(i);
+			Node n2 = nodePath.get(i+1);
+			
+			Node[] nodeArray = {n1,n2};
+			HashSet<Node> setToSearch = new HashSet<Node>(Arrays.asList(nodeArray));
+			
+			Road r = graph.roadNodes.get(setToSearch);
+			
+			roadPath.add(r);			
+		}
+		
+		return roadPath;
 	}
 	
 	public void export() throws IOException {
