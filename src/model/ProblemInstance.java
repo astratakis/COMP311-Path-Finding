@@ -179,7 +179,7 @@ public class ProblemInstance {
 			
 		}
 		
-		LinkedList<Road> roadPath = findRoadPath(spt);
+		LinkedList<Road> roadPath = findRoadPath(spt, d);
 		double totCost = 0.0;
 		double realCost = 0.0;
 		
@@ -212,7 +212,7 @@ public class ProblemInstance {
 		return spt;
 	}
 	
-	private LinkedList<Road> findRoadPath(LinkedList<Node> nodePath){
+	private LinkedList<Road> findRoadPath(LinkedList<Node> nodePath, Day d){
 		
 		LinkedList<Road> roadPath = new LinkedList<Road>();
 		
@@ -228,7 +228,19 @@ public class ProblemInstance {
 			Node[] nodeArray = {n1,n2};
 			HashSet<Node> setToSearch = new HashSet<Node>(Arrays.asList(nodeArray));
 			
-			Road r = graph.roadNodes.get(setToSearch).get(0);
+			Road r = Collections.min(graph.roadNodes.get(setToSearch), new Comparator<Road>() {
+
+				@Override
+				public int compare(Road r1, Road r2) {
+					if (d.predictions.get(r1.name) > d.predictions.get(r2.name)) {
+						return 1;
+					}
+					return -1;
+				}
+				
+			});
+			
+			System.out.println("Min: road: " + r + "====================\n");
 			
 			roadPath.add(r);			
 		}
