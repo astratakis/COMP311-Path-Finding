@@ -15,9 +15,10 @@ public class Graph {
 		nodes = new HashMap<String, Node>();
 		roads = new HashMap<String, Road>();
 		roadNodes = new HashMap<HashSet<Node>, ArrayList<Road>>();
-		HashSet<Node> nodesHashSet = new HashSet<Node>();
 		
 		while (!line.contentEquals("</Roads>")) {
+			
+			HashSet<Node> nodesHashSet = new HashSet<Node>();
 			
 			String[] arr = line.split("; ");
 			
@@ -38,12 +39,9 @@ public class Graph {
 			nodesHashSet.add(start);
 			nodesHashSet.add(end);
 			
-			System.out.println(nodesHashSet);
-			
 			if (!roadNodes.containsKey(nodesHashSet)) {
-				ArrayList<Road> list = new ArrayList<Road>();
-				list.add(r);
-				roadNodes.put(nodesHashSet, list);
+				roadNodes.put(new HashSet<Node>(nodesHashSet), new ArrayList<Road>());
+				roadNodes.get(nodesHashSet).add(r);
 			}
 			else {
 				roadNodes.get(nodesHashSet).add(r);
@@ -54,12 +52,6 @@ public class Graph {
 			
 			nodesHashSet.clear();
 			line = scanner.nextLine();
-		}
-		
-		for (HashSet<Node> hs : roadNodes.keySet()) {
-			System.out.println(hs);
-			System.out.println("Road: " + roadNodes.get(hs));
-			System.out.println();
 		}
 		
 		scanner.nextLine();
