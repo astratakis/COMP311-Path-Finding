@@ -235,6 +235,9 @@ public class ProblemInstance {
 					if (d.predictions.get(r1.name) > d.predictions.get(r2.name)) {
 						return 1;
 					}
+					else if (d.predictions.get(r1.name) == d.predictions.get(r2.name)) {
+						return 0;
+					}
 					return -1;
 				}
 				
