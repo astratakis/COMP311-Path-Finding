@@ -270,8 +270,8 @@ public class ProblemInstance {
 				return null;
 			}
 			else if (type == FOUND) {
-				System.out.println("Found");
-				System.out.println(path);
+				//System.out.println("Found");
+				//System.out.println(path);
 				return path;
 			}
 			
