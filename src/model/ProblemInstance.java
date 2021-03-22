@@ -125,10 +125,6 @@ public class ProblemInstance {
 		
 	}
 	
-	private LinkedList<Node> ida(Graph graph, Node source, Node destination, Day d) {
-		return null;
-	}
-	
 	private LinkedList<Node> bfs(Graph graph, Node source, Node destination, Day d) {
 		
 		long start = System.nanoTime();
@@ -232,12 +228,81 @@ public class ProblemInstance {
 			Node[] nodeArray = {n1,n2};
 			HashSet<Node> setToSearch = new HashSet<Node>(Arrays.asList(nodeArray));
 			
-			Road r = graph.roadNodes.get(setToSearch);
+			Road r = graph.roadNodes.get(setToSearch).get(0);
 			
 			roadPath.add(r);			
 		}
 		
 		return roadPath;
+	}
+	
+	private static final double FOUND = -1.0;
+	
+	private LinkedList<Node> ida(Graph graph, Node source, Node destination, Day d) {
+		
+		double bound = heuristic(source, destination);
+		
+		LinkedList<Node> path = new LinkedList<Node>();
+		
+		path.add(source);
+		
+		while (true) {
+			
+			double type = search(path, 0, bound);
+			
+			if (type == Double.MAX_VALUE) {
+				System.out.println("Not found ...");
+				return null;
+			}
+			else if (type == FOUND) {
+				System.out.println("Found");
+				System.out.println(path);
+				return path;
+			}
+			
+			bound = type;
+		}
+	}
+	
+	private double search(LinkedList<Node> path, double cost, double bound) {
+		Node curNode = path.getLast();
+		
+		double f = cost + heuristic(curNode, destination);
+		
+		if (f > bound) {
+			return f;
+		}
+		
+		if (curNode.equals(destination)) {
+			return FOUND;
+		}
+		
+		double min = Double.MAX_VALUE;
+		
+		for (Node n : curNode.neighbors.values()) {
+			if (!path.contains(n)) {
+				path.add(n);
+				double type = search(path, cost + cost(curNode, n), bound);
+				
+				if (type == FOUND) {
+					return FOUND;
+				}
+				else if (type < min) {
+					min = type;
+				}
+				path.pop();
+			}
+		}
+		
+		return min;
+	}
+	
+	private double cost(Node curNode, Node goal) {
+		return 0.0;
+	}
+	
+	private double heuristic(Node curNode, Node destination) {
+		return 0.0;
 	}
 	
 	public void export() throws IOException {

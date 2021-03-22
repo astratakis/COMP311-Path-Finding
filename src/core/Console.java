@@ -7,7 +7,7 @@ import model.ProblemInstance;
 
 public class Console {
 	
-	private final static String INPUT_FILE = "sampleGraph3.txt";
+	private final static String INPUT_FILE = "sampleGraph1.txt";
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner scanner = null;
