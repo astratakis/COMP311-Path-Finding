@@ -86,11 +86,7 @@ public class ProblemInstance {
 				
 				days.get(i).actual.put(arr[0], virtualWeight);
 			}
-		}
-		
-		scanner.close();
-		
-		simulate(Algorithms.BREADTH_FIRST_SEARCH);
+		}				
 	}
 	
 	final Node source;
@@ -112,71 +108,37 @@ public class ProblemInstance {
 		return buffer.toString();
 	}
 	
-	public void simulate(Algorithms alg) {
-		switch (alg) {
+	public void simulate() {
 		
-		case DIJKSTRA:
-			break;
-		case UNIFORM_COST_SEARCH:
-			ucs(days.get(0),graph,source,destination);
-			break;
-		case BREADTH_FIRST_SEARCH:
-			bfs(graph,source,destination,days.get(0));
-			break;
-		default: 
-			break;
-		}
-	}
-	
-	public LinkedList<Road> ucs(Day d, Graph g, Node source, Node destination) {
-		
-		double totalCost = 0.0;
-		Node curNode = source;
-		
-		LinkedList<Node> frontier = new LinkedList<Node>();
-		HashSet<Node> explored = new HashSet<Node>();
-		LinkedList<Road> path = new LinkedList<Road>();
-		
-		frontier.add(curNode);
-		
-		while(true) {
-			System.out.println("-->Exploring :"+curNode.name);
-			if(frontier.isEmpty()) {
-				break;
-			}
+		for (int i=0; i<days.size(); i++) {
 			
-			curNode = frontier.pop();
+			System.out.println("Day: " + (i+1));
 			
-			if(curNode.equals(destination)) {
-				break;
-			}
+			// Run bfs with predicions ...
 			
-			explored.add(curNode);
-					
-			for(Road r : curNode.neighbors.keySet()) {
-				
-				Node child = curNode.neighbors.get(r);
-				r.tmpPredictedWeight = d.predictions.get(r.name);
-				r.tmpActualWeight = d.actual.get(r.name);
-				
-				if(!explored.contains(child) && !frontier.contains(child)) {		
-					frontier.add(curNode.neighbors.get(r));
-				}else if(frontier.contains(child)){
-									
-				}
-			}
+			bfs(graph, source, destination, days.get(i));
+			
+			// Run ida* with predicions ...
+			
+			ida(graph, source, destination, days.get(i));
 		}
 		
-		return path;
 	}
 	
+	private LinkedList<Node> ida(Graph graph, Node source, Node destination, Day d) {
+		return null;
+	}
 	
-	public LinkedList<Node> bfs(Graph graph, Node source, Node destination, Day d) {
+	private LinkedList<Node> bfs(Graph graph, Node source, Node destination, Day d) {
+		
+		long start = System.nanoTime();
 		
 		LinkedList<Node> queue = new LinkedList<Node>();
 		LinkedList<Node> path = new LinkedList<Node>();
 		HashSet<Node> explored = new HashSet<Node>();
 		LinkedList<Node> spt = new LinkedList<Node>();
+		
+		int visitedNodes = 0;
 		
 		path.add(source);
 		queue.add(source);
@@ -198,6 +160,8 @@ public class ProblemInstance {
 						break;
 					}
 				}
+				
+				visitedNodes++;
 			}
 		}
 		
@@ -212,36 +176,47 @@ public class ProblemInstance {
 				spt.add(curNode);
 				currentSrc = curNode;
 				
-				if(curNode.equals(source)){
+				if(curNode.equals(source)) {
 					break;
 				}
 			}
 			
 		}
 		
-		System.out.println("----------------------------SPT-----------------------------");
-		
-		for(Node n : spt) {
-			System.out.println(n.name);
-		}
-		
-	
-		System.out.println("-------------------------SPT ROADS--------------------------");
-
 		LinkedList<Road> roadPath = findRoadPath(spt);
 		double totCost = 0.0;
+		double realCost = 0.0;
+		
+		long end = System.nanoTime();
+		
+		Collections.reverse(roadPath);
 		
 		for(Road r: roadPath) {
-			System.out.println(r.name);
-			totCost+=r.weight;
+			totCost += d.predictions.get(r.name);
+			realCost += d.actual.get(r.name);
+		}
+						
+		System.out.println("<BREADTH FIRST SEARCH>: ");
+		System.out.println("\tVisited Nodes Num: " + visitedNodes);
+		System.out.println("\tExecution time: " + (end - start < 1_000_000 ? end - start + " ns" : (end - start) / 1_000_000 + " ms"));
+		
+		StringBuilder buffer = new StringBuilder();
+		
+		for (int i=0; i<roadPath.size(); i++) {
+			buffer.append(roadPath.get(i).name + " ( " + d.predictions.get(roadPath.get(i).name) + " )");
+			if (i < roadPath.size() - 1) {
+				buffer.append(" -> ");
+			}
 		}
 		
-		System.out.println("Ride cost: "+totCost);
+		System.out.println("\tPath: " + buffer.toString());
+		System.out.printf("\tPredicted Cost: %.2f\n", totCost);
+		System.out.printf("\tReal Cost: %.2f\n\n", realCost);
 				
 		return spt;
 	}
 	
-	public LinkedList<Road> findRoadPath(LinkedList<Node> nodePath){
+	private LinkedList<Road> findRoadPath(LinkedList<Node> nodePath){
 		
 		LinkedList<Road> roadPath = new LinkedList<Road>();
 		

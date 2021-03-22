@@ -19,7 +19,7 @@ public class Node {
 	}
 	
 	public void printNeighbors() {
-		System.out.println("------- Node : "+this.name+"-------");
+		System.out.println("------- Node : "+this.name+ " -------");
 		for(Road r : neighbors.keySet()) {
 			System.out.println(r.name+ " connecting with "+neighbors.get(r));
 		}

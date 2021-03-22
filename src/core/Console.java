@@ -20,6 +20,9 @@ public class Console {
 		}
 		
 		ProblemInstance pi = new ProblemInstance(scanner);
+		
+		pi.simulate();
+		
 		scanner.close();
 	}
 
