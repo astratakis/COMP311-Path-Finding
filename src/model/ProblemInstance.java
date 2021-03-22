@@ -116,7 +116,6 @@ public class ProblemInstance {
 		switch (alg) {
 		
 		case DIJKSTRA:
-			dijkstra(graph, source, destination);
 			break;
 		case UNIFORM_COST_SEARCH:
 			ucs(days.get(0),graph,source,destination);
@@ -127,17 +126,6 @@ public class ProblemInstance {
 		default: 
 			break;
 		}
-	}
-	
-	/**
-	 * Shortest Path Search Algorithm (Dijkstra)
-	 * @param g
-	 * @param source
-	 */
-	public void dijkstra(Graph g, Node source, Node destination) {
-		
-		double totalDistranceTraveled = 0.0;
-		Node curNode = source;
 	}
 	
 	public LinkedList<Road> ucs(Day d, Graph g, Node source, Node destination) {
@@ -213,10 +201,6 @@ public class ProblemInstance {
 			}
 		}
 		
-		for(Node n : path) {
-			System.out.println(n.name);
-		}
-		
 		Node currentSrc = destination;
 		spt.add(destination);
 		
@@ -235,7 +219,7 @@ public class ProblemInstance {
 			
 		}
 		
-		System.out.println("------------------------SPT---------------------------");
+		System.out.println("----------------------------SPT-----------------------------");
 		
 		for(Node n : spt) {
 			System.out.println(n.name);
@@ -245,12 +229,16 @@ public class ProblemInstance {
 		System.out.println("-------------------------SPT ROADS--------------------------");
 
 		LinkedList<Road> roadPath = findRoadPath(spt);
+		double totCost = 0.0;
 		
 		for(Road r: roadPath) {
-			System.out.println(r);
+			System.out.println(r.name);
+			totCost+=r.weight;
 		}
+		
+		System.out.println("Ride cost: "+totCost);
 				
-		return spt;		
+		return spt;
 	}
 	
 	public LinkedList<Road> findRoadPath(LinkedList<Node> nodePath){
