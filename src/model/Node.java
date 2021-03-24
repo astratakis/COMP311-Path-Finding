@@ -8,10 +8,12 @@ public class Node {
 	public Node(String name) {
 		this.name = name;
 		this.neighbors = new HashMap<Road,Node>();
+	    this.cost = 0.0;
 	}
 	
 	final String name;
 	Map<Road,Node> neighbors;
+	double cost;
 	
 	@Override
 	public String toString() {

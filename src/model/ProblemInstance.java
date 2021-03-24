@@ -112,16 +112,19 @@ public class ProblemInstance {
 		
 		for (int i=0; i<days.size(); i++) {
 			
-			System.out.println("Day: " + (i+1));
+			//System.out.println("Day: " + (i+1));
 			
 			// Run bfs with predicions ...
 			
-			bfs(graph, source, destination, days.get(i));
+			//bfs(graph, source, destination, days.get(i));
 			
 			// Run ida* with predicions ...
 			
-			ida(graph, source, destination, days.get(i));
+			//ida(graph, source, destination, days.get(i));
+			
 		}
+		
+		System.out.println(heuristic(source,destination,days.get(2)));
 		
 	}
 	
@@ -141,10 +144,9 @@ public class ProblemInstance {
 		explored.add(source);
 		
 		Node curNode;
-		
+
 		while(!queue.isEmpty()) {
 			curNode = queue.pop();
-		
 			for(Node n: curNode.neighbors.values()) {
 				
 				if(!explored.contains(n)){
@@ -175,8 +177,7 @@ public class ProblemInstance {
 				if(curNode.equals(source)) {
 					break;
 				}
-			}
-			
+			}			
 		}
 		
 		LinkedList<Road> roadPath = findRoadPath(spt, d);
@@ -227,7 +228,7 @@ public class ProblemInstance {
 			
 			Node[] nodeArray = {n1,n2};
 			HashSet<Node> setToSearch = new HashSet<Node>(Arrays.asList(nodeArray));
-			
+
 			Road r = Collections.min(graph.roadNodes.get(setToSearch), new Comparator<Road>() {
 
 				@Override
@@ -242,9 +243,7 @@ public class ProblemInstance {
 				}
 				
 			});
-			
-			System.out.println("Min: road: " + r + "====================\n");
-			
+						
 			roadPath.add(r);			
 		}
 		
@@ -255,7 +254,7 @@ public class ProblemInstance {
 	
 	private LinkedList<Node> ida(Graph graph, Node source, Node destination, Day d) {
 		
-		double bound = heuristic(source, destination);
+		double bound = heuristic(source, destination,d);
 		
 		LinkedList<Node> path = new LinkedList<Node>();
 		
@@ -263,7 +262,7 @@ public class ProblemInstance {
 		
 		while (true) {
 			
-			double type = search(path, 0, bound);
+			double type = search(path, 0, bound,d);
 			
 			if (type == Double.MAX_VALUE) {
 				System.out.println("Not found ...");
@@ -279,10 +278,10 @@ public class ProblemInstance {
 		}
 	}
 	
-	private double search(LinkedList<Node> path, double cost, double bound) {
+	private double search(LinkedList<Node> path, double cost, double bound, Day d) {
 		Node curNode = path.getLast();
 		
-		double f = cost + heuristic(curNode, destination);
+		double f = cost + heuristic(curNode, destination,d);
 		
 		if (f > bound) {
 			return f;
@@ -297,7 +296,7 @@ public class ProblemInstance {
 		for (Node n : curNode.neighbors.values()) {
 			if (!path.contains(n)) {
 				path.add(n);
-				double type = search(path, cost + cost(curNode, n), bound);
+				double type = search(path, cost + heuristic(curNode,destination,d), bound, d);
 				
 				if (type == FOUND) {
 					return FOUND;
@@ -312,12 +311,79 @@ public class ProblemInstance {
 		return min;
 	}
 	
-	private double cost(Node curNode, Node goal) {
-		return 0.0;
+	private double heuristic(Node curNode, Node destination, Day d) {
+		
+		LinkedList<Node> path = new LinkedList<Node>(); 
+		path = ucs(curNode,destination,d);
+	
+		for(Node n: path) {
+			System.out.println(n.name);
+		}
+		
+		LinkedList<Road> roadPath = new LinkedList<Road>();
+	    roadPath = findRoadPath(path,d);
+		
+		
+		double totCost = 0.0;
+		
+		
+		for(Road r: roadPath) {
+			System.out.println("Road name: "+r.name);
+		}
+		
+		return totCost;
 	}
 	
-	private double heuristic(Node curNode, Node destination) {
-		return 0.0;
+	private LinkedList<Node> ucs(Node source,Node destination, Day d){
+		
+		Node node = source;
+		double cost = 0.0;
+		
+		for(Node n : graph.nodes.values()) {
+			n.cost = 0.0;
+		}
+		
+		
+		LinkedList<Node> frontier = new LinkedList<Node>();
+		Vector<Node> explored = new Vector<Node>();
+		LinkedList<Node> path = new LinkedList<Node>();
+		
+		frontier.add(node);
+		
+		while(true) {
+			if(frontier.isEmpty()) {
+				break;
+			}
+			
+			node = frontier.removeFirst();
+			
+			path.add(node);
+			
+			if(node.equals(destination)) {
+				break;
+			}
+			
+			explored.add(node);
+			
+			for(Road r : node.neighbors.keySet()) {
+				Node neighbor = node.neighbors.get(r);
+
+				if(!explored.contains(neighbor)) {
+					
+					if(!frontier.contains(neighbor)) {
+						frontier.add(neighbor);
+
+						neighbor.cost = d.predictions.get(r.name);
+					}
+					
+					else if(frontier.contains(neighbor) && d.predictions.get(r.name) > frontier.peek().cost) {
+						frontier.removeFirst();	
+						frontier.remove(neighbor);
+						frontier.push(neighbor);					}
+				}
+			}
+		}
+		return path;
 	}
 	
 	public void export() throws IOException {
