@@ -439,12 +439,11 @@ public class ProblemInstance {
 	
 	private double astar(Node source, Node destination, Day d) {
 		
-		 HashMap<Node,Node> parentMap = new HashMap<Node,Node>();
 	     HashSet<Node> visited = new HashSet<Node>();
 	     Map<Node, Double> distances = initializeInfimum();
 	     Queue<Node> priorityQueue = new PriorityQueue<Node>();
 	     
-	     double currentDistance = 0.0; 
+	     double currentDistnce = 0.0; 
 	     
 	     source.cost = 0.0;
 	     distances.put(source, 0.0);
@@ -460,7 +459,7 @@ public class ProblemInstance {
 	            if (!visited.contains(current) ){
 	                visited.add(current);
 	                // if last element in PQ reached
-	                if (current.equals(destination)) return currentDistance+current.cost;
+	                if (current.equals(destination)) return current.distanceToStart+current.cost;
 	 
 	                Set<Node> neighbors = (Set<Node>) current.neighbors.values();
 	                
@@ -486,8 +485,6 @@ public class ProblemInstance {
 	                            // used for PriorityQueue
 	                            neighbor.distanceToStart = totalDistance;
 	                            neighbor.predictedDistance = predictedDistance;
-	                            // set parent
-	                            parentMap.put(neighbor, current);
 	                            // enqueue
 	                            priorityQueue.add(neighbor);
 	                        }
