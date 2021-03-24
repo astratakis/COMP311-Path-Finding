@@ -127,7 +127,9 @@ public class ProblemInstance {
 		
 		}		
 		
-		System.out.println(heuristic(source,destination,days.get(0)));
+		heuristic(source,destination,days.get(0));
+		//System.out.println("Calculated cost by A*: "+ astar(source,destination,days.get(0)));
+		
 	}
 	
 	public void findCheapestRoads(Day d) {
@@ -429,6 +431,10 @@ public class ProblemInstance {
 						frontier.add(neighbor);
 
 						neighbor.cost = d.predictions.get(r.name);
+					
+					}else if(frontier.contains(neighbor) && neighbor.cost > node.cost ) {
+						frontier.remove(neighbor);
+						frontier.push(neighbor);
 					}
 					
 				}
@@ -441,58 +447,58 @@ public class ProblemInstance {
 		
 	     HashSet<Node> visited = new HashSet<Node>();
 	     Map<Node, Double> distances = initializeInfimum();
-	     Queue<Node> priorityQueue = new PriorityQueue<Node>();
 	     
-	     double currentDistnce = 0.0; 
-	     
-	     source.cost = 0.0;
+	     LinkedList<Node> priorityQueue = new LinkedList<Node>();
+	     	     
+	     source.distanceToStart = 0.0;
 	     distances.put(source, 0.0);
 	     priorityQueue.add(source);
 	     
 	     Node current = null;
-	     
-	     
-	     
+	    
 	     while (!priorityQueue.isEmpty()) {
 	            current = priorityQueue.remove();
 	 
 	            if (!visited.contains(current) ){
+	            	
 	                visited.add(current);
 	                // if last element in PQ reached
-	                if (current.equals(destination)) break;
-	 
-	                Set<Node> neighbors = (Set<Node>) current.neighbors.values();
 	                
-	                for (Node neighbor : neighbors) {
-	                    if (!visited.contains(neighbor) ){  
-	                    	
-	                    	HashSet<Node> nodes = new HashSet<Node>();
-	                    	nodes.add(neighbor);
-	                    	nodes.add(current);
-	                    	ArrayList<Road> connectors = graph.roadNodes.get(nodes);
-	                    	
-	                        // calculate predicted distance to the end node
-	                        double predictedDistance = astarHeuristic(source,destination,d);
-	                        
-	                        // 1. calculate distance to neighbor. 2. calculate dist from start node
+		            if (current.equals(destination)) break;
+		 
+		            
+		            Set<Node> neighbors = new HashSet<Node>(current.neighbors.values());
+		                
+		            for (Node neighbor : neighbors) {
+		                if (!visited.contains(neighbor) ){  
+		                	
+		                	HashSet<Node> nodes = new HashSet<Node>();
+		                	nodes.add(neighbor);
+		                	nodes.add(current);
+		                	ArrayList<Road> connectors = graph.roadNodes.get(nodes);
+		                	
+		                    // calculate predicted distance to the end node
+		                    double predictedDistance = astarHeuristic(current,destination,d);
+		                    
+		                    // 1. calculate distance to neighbor. 2. calculate dist from start node
 	                        double neighborDistance = d.predictions.get(findCheapestRoad(connectors,d).name);
 	                        double totalDistance = current.distanceToStart + neighborDistance + predictedDistance;
-	 
-	                        // check if distance smaller
-	                        if(totalDistance < distances.get(neighbor) ){
-	                            // update n's distance
-	                            distances.put(neighbor, totalDistance);
-	                            // used for PriorityQueue
-	                            neighbor.distanceToStart = totalDistance;
-	                            neighbor.predictedDistance = predictedDistance;
-	                            // enqueue
-	                            priorityQueue.add(neighbor);
-	                        }
-	                    }
-	                }
+		 
+		                        // check if distance smaller
+		                    if(totalDistance < distances.get(neighbor) ){
+		                        // update n's distance
+		                        distances.put(neighbor, totalDistance);
+		                        // used for PriorityQueue
+		                        neighbor.distanceToStart = totalDistance;
+		                        neighbor.predictedDistance = totalDistance + predictedDistance;
+		                        // enqueue
+		                        priorityQueue.add(neighbor);
+		                    }
+		                }
+		            }
 	            }
 	        }
-	        return current.distanceToStart + current.cost;
+	        return current.distanceToStart;
 	}
 	
 	
