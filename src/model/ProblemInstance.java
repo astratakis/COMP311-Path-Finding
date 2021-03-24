@@ -94,6 +94,7 @@ public class ProblemInstance {
 	final Graph graph;
 	
 	final List<Day> days;
+	Map<Node,Road> cheapestRoads;
 	
 	@Override
 	public String toString() {
@@ -112,6 +113,8 @@ public class ProblemInstance {
 		
 		for (int i=0; i<days.size(); i++) {
 			
+			findCheapestRoads(days.get(i));
+
 			//System.out.println("Day: " + (i+1));
 			
 			// Run bfs with predicions ...
@@ -121,11 +124,63 @@ public class ProblemInstance {
 			// Run ida* with predicions ...
 			
 			//ida(graph, source, destination, days.get(i));
+		
+		}		
+		
+		System.out.println(heuristic(source,destination,days.get(0)));
+	}
+	
+	public void findCheapestRoads(Day d) {
+		
+		cheapestRoads = new HashMap<Node,Road>();
+		cheapestRoads.clear();
+		
+		for(Node n : graph.nodes.values()) {
+			Road minRoad = Collections.min(n.neighbors.keySet(), new Comparator<Road>() {
+
+				@Override
+				public int compare(Road r1, Road r2) {
+					if (d.predictions.get(r1.name) > d.predictions.get(r2.name)) {
+						return 1;
+					}
+					else if (d.predictions.get(r1.name) == d.predictions.get(r2.name)) {
+						return 0;
+					}
+					return -1;
+				}
+				
+			});
 			
+			cheapestRoads.put(n, minRoad);
 		}
 		
-		System.out.println(heuristic(source,destination,days.get(2)));
+	}
+	
+	public Node findCheapestNeighbor(Node e) {
+		Node c;
+		Road r = cheapestRoads.get(e);
+		c = e.neighbors.get(r);
+		return c;
+	}
+	
+	public Road findCheapestRoad(ArrayList<Road> e,Day d) {
 		
+		Road minRoad = Collections.min(e, new Comparator<Road>() {
+
+			@Override
+			public int compare(Road r1, Road r2) {
+				if (d.predictions.get(r1.name) > d.predictions.get(r2.name)) {
+					return 1;
+				}
+				else if (d.predictions.get(r1.name) == d.predictions.get(r2.name)) {
+					return 0;
+				}
+				return -1;
+			}
+			
+		});
+		
+		return minRoad;
 	}
 	
 	private LinkedList<Node> bfs(Graph graph, Node source, Node destination, Day d) {
@@ -376,14 +431,96 @@ public class ProblemInstance {
 						neighbor.cost = d.predictions.get(r.name);
 					}
 					
-					else if(frontier.contains(neighbor) && d.predictions.get(r.name) > frontier.peek().cost) {
-						frontier.removeFirst();	
-						frontier.remove(neighbor);
-						frontier.push(neighbor);					}
 				}
 			}
 		}
 		return path;
+	}
+	
+	private double astar(Node source, Node destination, Day d) {
+		
+		 HashMap<Node,Node> parentMap = new HashMap<Node,Node>();
+	     HashSet<Node> visited = new HashSet<Node>();
+	     Map<Node, Double> distances = initializeInfimum();
+	     Queue<Node> priorityQueue = new PriorityQueue<Node>();
+	     
+	     double currentDistance = 0.0; 
+	     
+	     source.cost = 0.0;
+	     distances.put(source, 0.0);
+	     priorityQueue.add(source);
+	     
+	     Node current = null;
+	     
+	     
+	     
+	     while (!priorityQueue.isEmpty()) {
+	            current = priorityQueue.remove();
+	 
+	            if (!visited.contains(current) ){
+	                visited.add(current);
+	                // if last element in PQ reached
+	                if (current.equals(destination)) return currentDistance+current.cost;
+	 
+	                Set<Node> neighbors = (Set<Node>) current.neighbors.values();
+	                
+	                for (Node neighbor : neighbors) {
+	                    if (!visited.contains(neighbor) ){  
+	                    	
+	                    	HashSet<Node> nodes = new HashSet<Node>();
+	                    	nodes.add(neighbor);
+	                    	nodes.add(current);
+	                    	ArrayList<Road> connectors = graph.roadNodes.get(nodes);
+	                    	
+	                        // calculate predicted distance to the end node
+	                        double predictedDistance = astarHeuristic(source,destination,d);
+	                        
+	                        // 1. calculate distance to neighbor. 2. calculate dist from start node
+	                        double neighborDistance = d.predictions.get(findCheapestRoad(connectors,d).name);
+	                        double totalDistance = current.distanceToStart + neighborDistance + predictedDistance;
+	 
+	                        // check if distance smaller
+	                        if(totalDistance < distances.get(neighbor) ){
+	                            // update n's distance
+	                            distances.put(neighbor, totalDistance);
+	                            // used for PriorityQueue
+	                            neighbor.distanceToStart = totalDistance;
+	                            neighbor.predictedDistance = predictedDistance;
+	                            // set parent
+	                            parentMap.put(neighbor, current);
+	                            // enqueue
+	                            priorityQueue.add(neighbor);
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	        return currentDistance;
+	}
+	
+	
+	private double astarHeuristic(Node source, Node destination, Day d) {
+		LinkedList<Node> nodes = bfs(graph,source,destination,d);
+		LinkedList<Road> roads = findRoadPath(nodes,d);
+		
+		double totCost = 0.0;
+		
+		for(Road r : roads) {
+			totCost+=d.predictions.get(r.name);
+		}
+		
+		return totCost;
+	}
+	
+	private HashMap<Node,Double> initializeInfimum() {
+		HashMap<Node,Double> m = new HashMap<Node,Double>();
+		
+		for(Node n: graph.nodes.values()) {
+			n.cost = Double.MAX_VALUE;
+			m.put(n,n.cost);
+		}
+		
+		return m;
 	}
 	
 	public void export() throws IOException {

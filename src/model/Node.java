@@ -14,6 +14,8 @@ public class Node {
 	final String name;
 	Map<Road,Node> neighbors;
 	double cost;
+	double distanceToStart;
+	double predictedDistance;
 	
 	@Override
 	public String toString() {
