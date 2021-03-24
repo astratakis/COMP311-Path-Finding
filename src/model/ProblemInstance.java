@@ -459,7 +459,7 @@ public class ProblemInstance {
 	            if (!visited.contains(current) ){
 	                visited.add(current);
 	                // if last element in PQ reached
-	                if (current.equals(destination)) return current.distanceToStart+current.cost;
+	                if (current.equals(destination)) break;
 	 
 	                Set<Node> neighbors = (Set<Node>) current.neighbors.values();
 	                
@@ -492,7 +492,7 @@ public class ProblemInstance {
 	                }
 	            }
 	        }
-	        return currentDistance;
+	        return current.distanceToStart + current.cost;
 	}
 	
 	
