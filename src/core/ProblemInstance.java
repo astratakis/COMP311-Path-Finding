@@ -31,11 +31,14 @@ public class ProblemInstance {
 	
 	public void simulate() {
 		System.out.println("\n------------------------- Simulation and evaluation results ------------------------\n");
+		
+		
 		findCheapestNeighbors(days.get(0));
-		idastar(days.get(0));
 		
+		for(Node n : graph.getNodes().values()) {
+			initializeHeuristics(n);
+		}
 		
-		/*
 		for(Day d: days) {
 			findCheapestNeighbors(d);
 			
@@ -44,14 +47,17 @@ public class ProblemInstance {
 			
 			bfs(graph,source,destination,d);
 			dijkstra(d);
+			idastar(d);
 
 			for(Result r : d.getResults()) {
 				r.printResult();
 			}
 			
+			System.out.println("");
+			
 			System.out.println("--------------------------------------");
 			
-		}		*/
+		}		
 	}
 	
 	private LinkedList<Road> findRoadPath(LinkedList<Node> nodePath, Day d){
@@ -274,9 +280,11 @@ public class ProblemInstance {
 	}
 	
 	public void idastar(Day d) {
-		for(Node n : graph.getNodes().values()) {
-			initializeHeuristics(n);
-		}
+		Result r3 = new Result(d);
+		d.getResults().add(r3);
+		
+		visitedNodesStar = 0;
+		long start = System.nanoTime();
 		
 		double bound = heuristic(source, destination);
 		
@@ -291,14 +299,28 @@ public class ProblemInstance {
 				System.out.println("Not found ...");
 			}
 			else if (type == FOUND) {
-				System.out.println("Found");
-				path.push(source);
-				System.out.println(this.visitedNodesStar);
-				System.out.println(path);
 				break;
 			}
 			bound = type;
 		}
+		long end = System.nanoTime();
+		
+		LinkedList<Road> roadPath = new LinkedList<Road>();
+		roadPath = findRoadPath(path,d);
+		double predCost = 0.0;
+		double realCost = 0.0;
+
+		for(Road r: roadPath) {
+			predCost+=d.getPredictions().get(r);
+			realCost+=d.getActual().get(r);
+		}
+		
+		r3.setActualCost(realCost);
+		r3.setExecutionTime(end-start);
+		r3.setPredictedCost(predCost);
+		r3.setVisitedNodes(visitedNodesStar);
+		r3.setRoadPath(roadPath);
+		r3.setAlgorithmName("IDA*");		
 		
 	}
 	
@@ -321,7 +343,7 @@ public class ProblemInstance {
 		for (Node n : curNode.getAdjacencies()) {
 			if (!path.contains(n)) {
 				visitedNodesStar++;
-				path.push(n);
+				path.add(n);
 				double type = search(path, cost + curNode.getCheaperCosts().get(n).getWeight(), bound);
 				
 				if (type == FOUND) {
@@ -330,7 +352,7 @@ public class ProblemInstance {
 				else if (type < min) {
 					min = type;
 				}
-				path.pop();
+				path.remove(n);
 			}
 		}
 		
