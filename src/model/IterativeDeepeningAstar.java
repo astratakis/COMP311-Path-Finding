@@ -43,6 +43,8 @@ public class IterativeDeepeningAstar implements PathFinder {
 	@Override
 	public Result execute(Node source, Node destination, Day day) {
 		
+		visitedNodes = 0;
+		
 		// perform dijkstra at the beggining to initialize heuristics..
 		
 		double bound = heuristics.get(source);
@@ -122,6 +124,7 @@ public class IterativeDeepeningAstar implements PathFinder {
 	
 	private double search(double cost, double bound, Node destination) {
 		Node current = nodePath.getLast();
+		visitedNodes++;
 		
 		double f = cost + heuristics.get(current);
 		
