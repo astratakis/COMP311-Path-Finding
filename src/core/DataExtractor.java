@@ -9,8 +9,18 @@ import model.Day;
 import model.ProblemInstance;
 import model.Result;
 
+/**
+ * @author astratakis
+ * @author dpetrou
+ *
+ * Exports results info files.
+ */
 public class DataExtractor {
 	
+	/**
+	 * Constructor.
+	 * @param pi The problem instance that will be exported.
+	 */
 	public DataExtractor(ProblemInstance pi) {
 		this.days = pi.getDays();
 		
@@ -21,6 +31,11 @@ public class DataExtractor {
 	
 	private List<Day> days;
 
+	/**
+	 * Exports the System.out stream.
+	 * @param filename The output file name
+	 * @throws FileNotFoundException
+	 */
 	public void exportFullData(String filename) throws FileNotFoundException {
 		PrintWriter pr = null;
 		
@@ -41,6 +56,11 @@ public class DataExtractor {
 		pr.close();
 	}
 	
+	/**
+	 * Exports data into files that can be imported to exel.
+	 * @param filename The name of the file.
+	 * @throws FileNotFoundException
+	 */
 	public void exportExel(String filename) throws FileNotFoundException {
 		
 		PrintWriter pr = null;

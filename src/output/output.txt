@@ -8,14 +8,14 @@ Day: 1
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 74800 ns
+	Execution Time: 158300 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
 	Predicted cost: 91.4
 	Actual cost: 100.85000000000001
 
 <LRTA*>
 	Visited Nodes: 23
-	Execution Time: 177300 ns
+	Execution Time: 487100 ns
 	Road39e( 33.0 ) -> Road8e( 63.0 ) -> Road3e( 38.7 ) -> Road28e( 21.6 ) -> Road34e( 36.0 ) -> Road12e( 28.0 ) -> Road17e( 15.0 ) -> Road49e( 55.0 ) -> Road147e( 12.0 ) -> Road113e( 86.25 ) -> Road131e( 22.5 ) -> Road117e( 12.6 ) -> Road118e( 17.5 ) -> Road134e( 44.1 ) -> Road139e( 10.8 ) -> Road132e( 56.25 ) -> Road125e( 60.3 ) -> Road154e( 75.0 ) -> Road76e( 53.0 ) -> Road79e( 41.4 ) -> Road77e( 38.0 ) -> Road97e( 63.9 )
 	Predicted cost: 883.8999999999999
 	Actual cost: 883.8999999999999
@@ -23,21 +23,21 @@ Day: 1
 Day: 2
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 627400 ns
+	Execution Time: 679600 ns
 	Road14e( 17.0 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
 	Predicted cost: 107.65
 	Actual cost: 100.9
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 42100 ns
+	Execution Time: 49400 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 35.0 )
 	Predicted cost: 114.4
 	Actual cost: 107.65
 
 <LRTA*>
 	Visited Nodes: 7
-	Execution Time: 29200 ns
+	Execution Time: 32900 ns
 	Road142e( 9.0 ) -> Road57e( 8.75 ) -> Road59e( 71.25 ) -> Road148e( 45.0 ) -> Road90e( 17.5 ) -> Road100e( 47.0 )
 	Predicted cost: 198.5
 	Actual cost: 198.5
@@ -45,21 +45,21 @@ Day: 2
 Day: 3
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 626300 ns
+	Execution Time: 712200 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 97.7
 	Actual cost: 101.0
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 41800 ns
+	Execution Time: 44500 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 98.0
 	Actual cost: 95.3
 
 <LRTA*>
 	Visited Nodes: 6
-	Execution Time: 27400 ns
+	Execution Time: 35300 ns
 	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road93e( 21.0 ) -> Road81e( 90.0 ) -> Road84e( 77.5 )
 	Predicted cost: 270.5
 	Actual cost: 270.5
@@ -67,21 +67,21 @@ Day: 3
 Day: 4
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 613800 ns
+	Execution Time: 712100 ns
 	Road142e( 10.0 ) -> Road57e( 7.0 ) -> Road149e( 23.4 ) -> Road84e( 62.0 )
 	Predicted cost: 102.4
 	Actual cost: 96.19999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 46100 ns
+	Execution Time: 57800 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 105.7
 	Actual cost: 97.25
 
 <LRTA*>
 	Visited Nodes: 9
-	Execution Time: 40900 ns
+	Execution Time: 48800 ns
 	Road142e( 10.0 ) -> Road62e( 65.0 ) -> Road65e( 25.0 ) -> Road65e( 25.0 ) -> Road66e( 45.0 ) -> Road148e( 32.4 ) -> Road85e( 48.0 ) -> Road89e( 25.2 )
 	Predicted cost: 275.6
 	Actual cost: 275.6
@@ -89,21 +89,21 @@ Day: 4
 Day: 5
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 526400 ns
+	Execution Time: 534300 ns
 	Road142e( 10.0 ) -> Road57e( 6.3 ) -> Road149e( 23.4 ) -> Road84e( 55.8 )
 	Predicted cost: 95.5
 	Actual cost: 104.15
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 187900 ns
+	Execution Time: 42500 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
 	Predicted cost: 98.05
 	Actual cost: 95.3
 
 <LRTA*>
 	Visited Nodes: 14
-	Execution Time: 248200 ns
+	Execution Time: 73400 ns
 	Road40e( 23.0 ) -> Road20e( 9.9 ) -> Road20e( 9.9 ) -> Road20e( 9.9 ) -> Road12e( 35.0 ) -> Road22e( 58.0 ) -> Road28e( 21.6 ) -> Road9e( 33.3 ) -> Road6e( 48.75 ) -> Road40e( 23.0 ) -> Road45e( 69.0 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 409.34999999999997
 	Actual cost: 409.34999999999997
@@ -111,21 +111,21 @@ Day: 5
 Day: 6
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 621400 ns
+	Execution Time: 3 ms
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 102.44999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 39300 ns
+	Execution Time: 44600 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 101.75
 	Actual cost: 111.5
 
 <LRTA*>
 	Visited Nodes: 5
-	Execution Time: 30600 ns
+	Execution Time: 28300 ns
 	Road143e( 64.0 ) -> Road148e( 32.4 ) -> Road91e( 34.2 ) -> Road101e( 17.1 )
 	Predicted cost: 147.70000000000002
 	Actual cost: 147.70000000000002
@@ -133,21 +133,21 @@ Day: 6
 Day: 7
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 536900 ns
+	Execution Time: 523300 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.80000000000001
 	Actual cost: 107.35
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 60600 ns
+	Execution Time: 36400 ns
 	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
 	Predicted cost: 112.0
 	Actual cost: 104.7
 
 <LRTA*>
 	Visited Nodes: 7
-	Execution Time: 31000 ns
+	Execution Time: 45000 ns
 	Road37e( 32.4 ) -> Road25e( 13.0 ) -> Road26e( 70.2 ) -> Road42e( 23.4 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 205.1
 	Actual cost: 205.1
@@ -155,21 +155,21 @@ Day: 7
 Day: 8
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 519300 ns
+	Execution Time: 452400 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road93e( 26.25 ) -> Road101e( 19.0 )
 	Predicted cost: 109.5
 	Actual cost: 123.75
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 48100 ns
+	Execution Time: 2 ms
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
 	Predicted cost: 113.0
 	Actual cost: 122.5
 
 <LRTA*>
 	Visited Nodes: 5
-	Execution Time: 29300 ns
+	Execution Time: 61400 ns
 	Road13e( 57.6 ) -> Road15e( 32.4 ) -> Road144e( 61.25 ) -> Road101e( 23.75 )
 	Predicted cost: 175.0
 	Actual cost: 175.0
@@ -177,21 +177,21 @@ Day: 8
 Day: 9
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 439400 ns
+	Execution Time: 442800 ns
 	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road149e( 26.0 ) -> Road84e( 55.8 )
 	Predicted cost: 97.8
 	Actual cost: 104.0
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 53700 ns
+	Execution Time: 142100 ns
 	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 107.5
 	Actual cost: 98.05
 
 <LRTA*>
 	Visited Nodes: 8
-	Execution Time: 55800 ns
+	Execution Time: 279300 ns
 	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road58e( 87.5 ) -> Road70e( 18.0 ) -> Road148e( 32.4 ) -> Road91e( 38.0 ) -> Road101e( 17.1 )
 	Predicted cost: 209.0
 	Actual cost: 209.0
@@ -199,21 +199,21 @@ Day: 9
 Day: 10
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 539100 ns
+	Execution Time: 498700 ns
 	Road37e( 32.4 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 95.60000000000001
 	Actual cost: 92.9
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 1 ms
+	Execution Time: 56300 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 97.25
 	Actual cost: 90.8
 
 <LRTA*>
 	Visited Nodes: 6
-	Execution Time: 207500 ns
+	Execution Time: 26300 ns
 	Road37e( 32.4 ) -> Road47e( 11.0 ) -> Road44e( 57.6 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 169.0
 	Actual cost: 169.0
@@ -221,21 +221,21 @@ Day: 10
 Day: 11
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 434700 ns
+	Execution Time: 354000 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 109.95
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 87600 ns
+	Execution Time: 38400 ns
 	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 103.2
 	Actual cost: 103.2
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 18800 ns
+	Execution Time: 17900 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 109.95
 	Actual cost: 109.95
@@ -243,21 +243,21 @@ Day: 11
 Day: 12
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 386800 ns
+	Execution Time: 361500 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 98.0
 	Actual cost: 95.3
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 28600 ns
+	Execution Time: 132800 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 98.0
 	Actual cost: 95.3
 
 <LRTA*>
 	Visited Nodes: 9
-	Execution Time: 36000 ns
+	Execution Time: 37800 ns
 	Road146e( 40.0 ) -> Road132e( 56.25 ) -> Road139e( 15.0 ) -> Road120e( 77.0 ) -> Road122e( 76.25 ) -> Road141e( 86.25 ) -> Road152e( 31.5 ) -> Road89e( 28.0 )
 	Predicted cost: 410.25
 	Actual cost: 410.25
@@ -265,21 +265,21 @@ Day: 12
 Day: 13
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 411700 ns
+	Execution Time: 361900 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 102.44999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 41300 ns
+	Execution Time: 27600 ns
 	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
 	Predicted cost: 115.75
 	Actual cost: 118.25
 
 <LRTA*>
 	Visited Nodes: 6
-	Execution Time: 132900 ns
+	Execution Time: 27200 ns
 	Road142e( 9.0 ) -> Road69e( 35.1 ) -> Road148e( 45.0 ) -> Road91e( 47.5 ) -> Road101e( 17.1 )
 	Predicted cost: 153.7
 	Actual cost: 153.7
@@ -287,21 +287,21 @@ Day: 13
 Day: 14
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 485400 ns
+	Execution Time: 453600 ns
 	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 90.9
 	Actual cost: 104.35
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 15500 ns
+	Execution Time: 20500 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 94.55
 	Actual cost: 97.25
 
 <LRTA*>
 	Visited Nodes: 7
-	Execution Time: 34600 ns
+	Execution Time: 32300 ns
 	Road31e( 24.0 ) -> Road33e( 27.9 ) -> Road7e( 7.2 ) -> Road7e( 7.2 ) -> Road145e( 27.0 ) -> Road94e( 57.0 )
 	Predicted cost: 150.3
 	Actual cost: 150.3
@@ -309,21 +309,21 @@ Day: 14
 Day: 15
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 394900 ns
+	Execution Time: 600200 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 96.1
 	Actual cost: 104.35
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 14100 ns
+	Execution Time: 45200 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 101.75
 	Actual cost: 115.5
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 19400 ns
+	Execution Time: 25800 ns
 	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 104.35
 	Actual cost: 104.35
@@ -331,21 +331,21 @@ Day: 15
 Day: 16
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 415400 ns
+	Execution Time: 345500 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 102.44999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 21700 ns
+	Execution Time: 17800 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 98.95
 	Actual cost: 92.5
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 20400 ns
+	Execution Time: 21900 ns
 	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 102.44999999999999
 	Actual cost: 102.44999999999999
@@ -353,21 +353,21 @@ Day: 16
 Day: 17
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 475700 ns
+	Execution Time: 386600 ns
 	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 92.9
 	Actual cost: 105.95
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 27000 ns
+	Execution Time: 22400 ns
 	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 95.25
 	Actual cost: 100.45
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 18500 ns
+	Execution Time: 18600 ns
 	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
 	Predicted cost: 114.0
 	Actual cost: 114.0
@@ -375,21 +375,21 @@ Day: 17
 Day: 18
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 597300 ns
+	Execution Time: 375500 ns
 	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road93e( 26.25 ) -> Road101e( 19.0 )
 	Predicted cost: 101.75
 	Actual cost: 100.94999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 13800 ns
+	Execution Time: 17000 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 104.35
 	Actual cost: 101.8
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 25300 ns
+	Execution Time: 21600 ns
 	Road36e( 33.0 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 113.25
 	Actual cost: 113.25
@@ -397,21 +397,21 @@ Day: 18
 Day: 19
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 1 ms
+	Execution Time: 402900 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 92.0
 	Actual cost: 98.75
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 31000 ns
+	Execution Time: 225200 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 92.0
 	Actual cost: 98.75
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 48000 ns
+	Execution Time: 22900 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 97.7
 	Actual cost: 97.7
@@ -419,21 +419,21 @@ Day: 19
 Day: 20
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 371000 ns
+	Execution Time: 358000 ns
 	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 101.0
 	Actual cost: 104.35
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 6400 ns
+	Execution Time: 21700 ns
 	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
 	Predicted cost: 112.7
 	Actual cost: 103.2
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 23200 ns
+	Execution Time: 27700 ns
 	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 104.35
 	Actual cost: 104.35
@@ -441,21 +441,21 @@ Day: 20
 Day: 21
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 627700 ns
+	Execution Time: 5 ms
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road93e( 18.9 ) -> Road101e( 17.1 )
 	Predicted cost: 100.25
 	Actual cost: 93.5
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 15700 ns
+	Execution Time: 31900 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 28.0 )
 	Predicted cost: 102.15
 	Actual cost: 102.4
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 83500 ns
+	Execution Time: 34800 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.80000000000001
 	Actual cost: 95.80000000000001
@@ -463,21 +463,21 @@ Day: 21
 Day: 22
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 414600 ns
+	Execution Time: 364600 ns
 	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 92.9
 	Actual cost: 92.9
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 24200 ns
+	Execution Time: 29500 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 96.25
 	Actual cost: 96.25
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 16900 ns
+	Execution Time: 22500 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 108.05000000000001
 	Actual cost: 108.05000000000001
@@ -485,21 +485,21 @@ Day: 22
 Day: 23
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 420500 ns
+	Execution Time: 332400 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 93.9
 	Actual cost: 97.15
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 12100 ns
+	Execution Time: 11100 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
 	Predicted cost: 97.55
 	Actual cost: 100.8
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 21600 ns
+	Execution Time: 25600 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.80000000000001
 	Actual cost: 95.80000000000001
@@ -507,21 +507,21 @@ Day: 23
 Day: 24
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 469200 ns
+	Execution Time: 333700 ns
 	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 99.55
 	Actual cost: 105.0
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 19000 ns
+	Execution Time: 29000 ns
 	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 99.55
 	Actual cost: 105.0
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 33800 ns
+	Execution Time: 32500 ns
 	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 109.25
 	Actual cost: 109.25
@@ -529,21 +529,21 @@ Day: 24
 Day: 25
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 474900 ns
+	Execution Time: 334700 ns
 	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 11.0 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
 	Predicted cost: 102.15
 	Actual cost: 98.65
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 5900 ns
+	Execution Time: 14900 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
 	Predicted cost: 102.9
 	Actual cost: 95.65
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 12900 ns
+	Execution Time: 45000 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 108.05000000000001
 	Actual cost: 108.05000000000001
@@ -551,21 +551,21 @@ Day: 25
 Day: 26
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 258400 ns
+	Execution Time: 300000 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 96.1
 	Actual cost: 104.35
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 6800 ns
+	Execution Time: 12300 ns
 	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 103.3
 	Actual cost: 112.75
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 30200 ns
+	Execution Time: 15900 ns
 	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 104.35
 	Actual cost: 104.35
@@ -573,21 +573,21 @@ Day: 26
 Day: 27
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 407400 ns
+	Execution Time: 324800 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
 	Predicted cost: 97.5
 	Actual cost: 94.8
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 17500 ns
+	Execution Time: 11700 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 103.5
 	Actual cost: 100.8
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 19800 ns
+	Execution Time: 49400 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 109.95
 	Actual cost: 109.95
@@ -595,21 +595,21 @@ Day: 27
 Day: 28
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 477300 ns
+	Execution Time: 465800 ns
 	Road40e( 20.7 ) -> Road50e( 12.6 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.69999999999999
 	Actual cost: 110.4
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 10400 ns
+	Execution Time: 18700 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 99.05
 	Actual cost: 102.3
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 20400 ns
+	Execution Time: 74100 ns
 	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
 	Predicted cost: 114.0
 	Actual cost: 114.0
@@ -617,21 +617,21 @@ Day: 28
 Day: 29
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 445700 ns
+	Execution Time: 358400 ns
 	Road14e( 15.3 ) -> Road19e( 6.3 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 94.8
 	Actual cost: 97.5
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 8900 ns
+	Execution Time: 32700 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 97.35
 	Actual cost: 100.05
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 17400 ns
+	Execution Time: 16200 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 97.7
 	Actual cost: 97.7
@@ -639,21 +639,21 @@ Day: 29
 Day: 30
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 468400 ns
+	Execution Time: 308000 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 102.44999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 9300 ns
+	Execution Time: 13800 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
 	Predicted cost: 101.7
 	Actual cost: 104.7
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 16100 ns
+	Execution Time: 14800 ns
 	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 102.44999999999999
 	Actual cost: 102.44999999999999
@@ -661,21 +661,21 @@ Day: 30
 Day: 31
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 349000 ns
+	Execution Time: 291600 ns
 	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road149e( 23.4 ) -> Road84e( 62.0 )
 	Predicted cost: 101.4
 	Actual cost: 95.19999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 9100 ns
+	Execution Time: 9600 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 113.8
 	Actual cost: 104.35
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 20700 ns
+	Execution Time: 14200 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 121.5
 	Actual cost: 121.5
@@ -683,21 +683,21 @@ Day: 31
 Day: 32
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 357900 ns
+	Execution Time: 292200 ns
 	Road142e( 10.0 ) -> Road57e( 8.75 ) -> Road149e( 23.4 ) -> Road84e( 55.8 )
 	Predicted cost: 97.94999999999999
 	Actual cost: 113.25
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 7900 ns
+	Execution Time: 10300 ns
 	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 106.2
 	Actual cost: 96.75
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 18700 ns
+	Execution Time: 16200 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 108.05000000000001
 	Actual cost: 108.05000000000001
@@ -705,21 +705,21 @@ Day: 32
 Day: 33
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 415800 ns
+	Execution Time: 324900 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 91.19999999999999
 	Actual cost: 94.6
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 9100 ns
+	Execution Time: 11700 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 35.0 )
 	Predicted cost: 98.0
 	Actual cost: 99.5
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 16200 ns
+	Execution Time: 18500 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 121.5
 	Actual cost: 121.5
@@ -727,21 +727,21 @@ Day: 33
 Day: 34
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 378800 ns
+	Execution Time: 348500 ns
 	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 99.1
 	Actual cost: 95.80000000000001
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 12100 ns
+	Execution Time: 12800 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 113.8
 	Actual cost: 94.55
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 15700 ns
+	Execution Time: 13700 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.80000000000001
 	Actual cost: 95.80000000000001
@@ -749,391 +749,17 @@ Day: 34
 Day: 35
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 357900 ns
+	Execution Time: 329100 ns
 	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 99.1
 	Actual cost: 107.35
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 27400 ns
+	Execution Time: 13000 ns
 	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 106.0
 	Actual cost: 103.2
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14900 ns
-	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
-	Predicted cost: 107.35
-	Actual cost: 107.35
-
-Day: 36
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 430200 ns
-	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
-	Predicted cost: 94.8
-	Actual cost: 107.5
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 23300 ns
-	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
-	Predicted cost: 94.8
-	Actual cost: 107.5
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 17100 ns
-	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
-	Predicted cost: 92.8
-	Actual cost: 92.8
-
-Day: 37
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 340600 ns
-	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 90.8
-	Actual cost: 96.15
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 8800 ns
-	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 90.8
-	Actual cost: 96.15
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14700 ns
-	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
-	Predicted cost: 114.0
-	Actual cost: 114.0
-
-Day: 38
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 310500 ns
-	Road40e( 20.7 ) -> Road50e( 12.6 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
-	Predicted cost: 95.69999999999999
-	Actual cost: 107.35
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 8300 ns
-	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
-	Predicted cost: 98.05
-	Actual cost: 100.75
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14100 ns
-	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
-	Predicted cost: 95.80000000000001
-	Actual cost: 95.80000000000001
-
-Day: 39
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 313500 ns
-	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road93e( 18.9 ) -> Road101e( 19.0 )
-	Predicted cost: 92.5
-	Actual cost: 93.69999999999999
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 7200 ns
-	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
-	Predicted cost: 100.6
-	Actual cost: 101.8
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14500 ns
-	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
-	Predicted cost: 121.5
-	Actual cost: 121.5
-
-Day: 40
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 314200 ns
-	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road149e( 26.0 ) -> Road84e( 62.0 )
-	Predicted cost: 104.0
-	Actual cost: 118.8
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 12800 ns
-	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 104.7
-	Actual cost: 107.75
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 15600 ns
-	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
-	Predicted cost: 108.05000000000001
-	Actual cost: 108.05000000000001
-
-Day: 41
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 312600 ns
-	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 94.55
-	Actual cost: 97.25
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 9000 ns
-	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 94.55
-	Actual cost: 97.25
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 28400 ns
-	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
-	Predicted cost: 121.5
-	Actual cost: 121.5
-
-Day: 42
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 830500 ns
-	Road14e( 17.0 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
-	Predicted cost: 96.30000000000001
-	Actual cost: 99.0
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 15100 ns
-	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
-	Predicted cost: 106.05
-	Actual cost: 108.75
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 27000 ns
-	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
-	Predicted cost: 108.05000000000001
-	Actual cost: 108.05000000000001
-
-Day: 43
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 1 ms
-	Road37e( 32.4 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
-	Predicted cost: 99.4
-	Actual cost: 118.75
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 47300 ns
-	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
-	Predicted cost: 105.0
-	Actual cost: 118.75
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 85900 ns
-	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
-	Predicted cost: 109.25
-	Actual cost: 109.25
-
-Day: 44
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 450500 ns
-	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
-	Predicted cost: 97.30000000000001
-	Actual cost: 95.69999999999999
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 8600 ns
-	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
-	Predicted cost: 107.05
-	Actual cost: 99.1
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 13400 ns
-	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
-	Predicted cost: 108.05000000000001
-	Actual cost: 108.05000000000001
-
-Day: 45
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 319500 ns
-	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
-	Predicted cost: 105.75
-	Actual cost: 97.5
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 10000 ns
-	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
-	Predicted cost: 111.75
-	Actual cost: 103.5
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 16100 ns
-	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
-	Predicted cost: 109.95
-	Actual cost: 109.95
-
-Day: 46
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 261500 ns
-	Road37e( 36.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
-	Predicted cost: 103.0
-	Actual cost: 100.3
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 24000 ns
-	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
-	Predicted cost: 105.0
-	Actual cost: 100.8
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 10800 ns
-	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
-	Predicted cost: 121.5
-	Actual cost: 121.5
-
-Day: 47
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 304400 ns
-	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
-	Predicted cost: 96.1
-	Actual cost: 92.8
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 5100 ns
-	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
-	Predicted cost: 105.0
-	Actual cost: 111.75
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14200 ns
-	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
-	Predicted cost: 92.8
-	Actual cost: 92.8
-
-Day: 48
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 289500 ns
-	Road14e( 17.0 ) -> Road19e( 6.3 ) -> Road47e( 11.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 104.25
-	Actual cost: 100.25
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 7700 ns
-	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 105.7
-	Actual cost: 93.7
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14400 ns
-	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
-	Predicted cost: 108.05000000000001
-	Actual cost: 108.05000000000001
-
-Day: 49
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 323600 ns
-	Road142e( 10.0 ) -> Road57e( 7.0 ) -> Road149e( 23.4 ) -> Road84e( 55.8 )
-	Predicted cost: 96.19999999999999
-	Actual cost: 117.9
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 8400 ns
-	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
-	Predicted cost: 110.25
-	Actual cost: 108.75
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14200 ns
-	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
-	Predicted cost: 109.25
-	Actual cost: 109.25
-
-Day: 50
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 327100 ns
-	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 11.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
-	Predicted cost: 99.3
-	Actual cost: 106.05
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 7500 ns
-	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
-	Predicted cost: 100.05
-	Actual cost: 106.8
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 14400 ns
-	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
-	Predicted cost: 97.7
-	Actual cost: 97.7
-
-Day: 51
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 294600 ns
-	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 98.75
-	Actual cost: 97.95
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 10400 ns
-	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
-	Predicted cost: 98.75
-	Actual cost: 97.95
-
-<LRTA*>
-	Visited Nodes: 4
-	Execution Time: 15500 ns
-	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
-	Predicted cost: 107.35
-	Actual cost: 107.35
-
-Day: 52
-<DIJKSTRA>
-	Visited Nodes: 35
-	Execution Time: 332400 ns
-	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
-	Predicted cost: 97.30000000000001
-	Actual cost: 96.30000000000001
-
-<IDA*>
-	Visited Nodes: 27
-	Execution Time: 8900 ns
-	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
-	Predicted cost: 100.05
-	Actual cost: 99.05
 
 <LRTA*>
 	Visited Nodes: 4
@@ -1142,24 +768,398 @@ Day: 52
 	Predicted cost: 107.35
 	Actual cost: 107.35
 
+Day: 36
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 287900 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 94.8
+	Actual cost: 107.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 11600 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 94.8
+	Actual cost: 107.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14600 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 92.8
+	Actual cost: 92.8
+
+Day: 37
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 286400 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 90.8
+	Actual cost: 96.15
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9300 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 90.8
+	Actual cost: 96.15
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 13300 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
+	Predicted cost: 114.0
+	Actual cost: 114.0
+
+Day: 38
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 287800 ns
+	Road40e( 20.7 ) -> Road50e( 12.6 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.69999999999999
+	Actual cost: 107.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10400 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 98.05
+	Actual cost: 100.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 13000 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 95.80000000000001
+
+Day: 39
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 278500 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road93e( 18.9 ) -> Road101e( 19.0 )
+	Predicted cost: 92.5
+	Actual cost: 93.69999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9900 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 100.6
+	Actual cost: 101.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 12600 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 40
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 278900 ns
+	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road149e( 26.0 ) -> Road84e( 62.0 )
+	Predicted cost: 104.0
+	Actual cost: 118.8
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 11800 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 104.7
+	Actual cost: 107.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 13500 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 41
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 286300 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 94.55
+	Actual cost: 97.25
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 12600 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 94.55
+	Actual cost: 97.25
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 36700 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 42
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 342500 ns
+	Road14e( 17.0 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 96.30000000000001
+	Actual cost: 99.0
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 12300 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 106.05
+	Actual cost: 108.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 45400 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 43
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 227800 ns
+	Road37e( 32.4 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 99.4
+	Actual cost: 118.75
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10900 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 105.0
+	Actual cost: 118.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14500 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 109.25
+	Actual cost: 109.25
+
+Day: 44
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 419900 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 97.30000000000001
+	Actual cost: 95.69999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 57500 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 107.05
+	Actual cost: 99.1
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 16100 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 45
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 336000 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 105.75
+	Actual cost: 97.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 146600 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 111.75
+	Actual cost: 103.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 21900 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.95
+	Actual cost: 109.95
+
+Day: 46
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 295000 ns
+	Road37e( 36.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 103.0
+	Actual cost: 100.3
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 11100 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 105.0
+	Actual cost: 100.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 24100 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 47
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 554000 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 92.8
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 15800 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 105.0
+	Actual cost: 111.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 58300 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 92.8
+	Actual cost: 92.8
+
+Day: 48
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 352300 ns
+	Road14e( 17.0 ) -> Road19e( 6.3 ) -> Road47e( 11.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 104.25
+	Actual cost: 100.25
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 18200 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 105.7
+	Actual cost: 93.7
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 20900 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 49
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 586700 ns
+	Road142e( 10.0 ) -> Road57e( 7.0 ) -> Road149e( 23.4 ) -> Road84e( 55.8 )
+	Predicted cost: 96.19999999999999
+	Actual cost: 117.9
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 19100 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 110.25
+	Actual cost: 108.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 36300 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 109.25
+	Actual cost: 109.25
+
+Day: 50
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 651100 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 11.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 99.3
+	Actual cost: 106.05
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 26900 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 100.05
+	Actual cost: 106.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 37700 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.7
+	Actual cost: 97.7
+
+Day: 51
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 310800 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 98.75
+	Actual cost: 97.95
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 26000 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 98.75
+	Actual cost: 97.95
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 50000 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.35
+	Actual cost: 107.35
+
+Day: 52
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 753500 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 97.30000000000001
+	Actual cost: 96.30000000000001
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 23400 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 100.05
+	Actual cost: 99.05
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 33900 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.35
+	Actual cost: 107.35
+
 Day: 53
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 389800 ns
+	Execution Time: 1 ms
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 23.75 )
 	Predicted cost: 100.85
 	Actual cost: 97.55
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 12300 ns
+	Execution Time: 91100 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 111.75
 	Actual cost: 102.3
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 16400 ns
+	Execution Time: 170200 ns
 	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 23.75 )
 	Predicted cost: 97.55
 	Actual cost: 97.55
@@ -1167,21 +1167,21 @@ Day: 53
 Day: 54
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 313000 ns
+	Execution Time: 419400 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 95.2
 	Actual cost: 100.45
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 8800 ns
+	Execution Time: 24500 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 95.2
 	Actual cost: 100.45
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 16700 ns
+	Execution Time: 29500 ns
 	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 109.25
 	Actual cost: 109.25
@@ -1189,21 +1189,21 @@ Day: 54
 Day: 55
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 313300 ns
+	Execution Time: 513500 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 90.9
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 9400 ns
+	Execution Time: 14800 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 103.5
 	Actual cost: 114.5
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 18500 ns
+	Execution Time: 24500 ns
 	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 90.9
 	Actual cost: 90.9
@@ -1211,21 +1211,21 @@ Day: 55
 Day: 56
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 369300 ns
+	Execution Time: 252400 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 23.75 )
 	Predicted cost: 102.25
 	Actual cost: 112.55
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 14400 ns
+	Execution Time: 8100 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 103.5
 	Actual cost: 98.75
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 19100 ns
+	Execution Time: 12200 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
 	Predicted cost: 102.45
 	Actual cost: 102.45
@@ -1233,21 +1233,21 @@ Day: 56
 Day: 57
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 4 ms
+	Execution Time: 123100 ns
 	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 99.85
 	Actual cost: 111.85
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 14800 ns
+	Execution Time: 8900 ns
 	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
 	Predicted cost: 100.7
 	Actual cost: 112.7
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 26200 ns
+	Execution Time: 9400 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 119.6
 	Actual cost: 119.6
@@ -1255,21 +1255,21 @@ Day: 57
 Day: 58
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 466300 ns
+	Execution Time: 145800 ns
 	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 11.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
 	Predicted cost: 99.25
 	Actual cost: 98.15
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 12800 ns
+	Execution Time: 5400 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
 	Predicted cost: 100.0
 	Actual cost: 94.75
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 21400 ns
+	Execution Time: 15900 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 121.5
 	Actual cost: 121.5
@@ -1277,21 +1277,21 @@ Day: 58
 Day: 59
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 314900 ns
+	Execution Time: 142200 ns
 	Road142e( 10.0 ) -> Road57e( 7.0 ) -> Road149e( 26.0 ) -> Road84e( 55.8 )
 	Predicted cost: 98.8
 	Actual cost: 120.5
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 8600 ns
+	Execution Time: 10700 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 101.95
 	Actual cost: 101.95
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 15200 ns
+	Execution Time: 10800 ns
 	Road36e( 33.0 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 111.35
 	Actual cost: 111.35
@@ -1299,7 +1299,7 @@ Day: 59
 Day: 60
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 292700 ns
+	Execution Time: 129700 ns
 	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 104.35
 	Actual cost: 96.1
@@ -1313,7 +1313,7 @@ Day: 60
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 15600 ns
+	Execution Time: 9300 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 96.1
 	Actual cost: 96.1
@@ -1321,21 +1321,21 @@ Day: 60
 Day: 61
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 281700 ns
+	Execution Time: 182000 ns
 	Road37e( 36.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 101.1
 	Actual cost: 105.05
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 10700 ns
+	Execution Time: 8800 ns
 	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
 	Predicted cost: 112.0
 	Actual cost: 109.3
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 14200 ns
+	Execution Time: 16200 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 23.75 )
 	Predicted cost: 126.25
 	Actual cost: 126.25
@@ -1343,21 +1343,21 @@ Day: 61
 Day: 62
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 286900 ns
+	Execution Time: 236200 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 90.9
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 7800 ns
+	Execution Time: 14000 ns
 	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 100.6
 	Actual cost: 113.4
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 14900 ns
+	Execution Time: 27700 ns
 	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 90.9
 	Actual cost: 90.9
@@ -1365,21 +1365,21 @@ Day: 62
 Day: 63
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 314200 ns
+	Execution Time: 209300 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 96.1
 	Actual cost: 92.8
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 10600 ns
+	Execution Time: 9900 ns
 	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 97.95
 	Actual cost: 97.95
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 15300 ns
+	Execution Time: 15100 ns
 	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 92.8
 	Actual cost: 92.8
@@ -1387,21 +1387,21 @@ Day: 63
 Day: 64
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 722100 ns
+	Execution Time: 329400 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 96.1
 	Actual cost: 92.8
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 14500 ns
+	Execution Time: 21200 ns
 	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
 	Predicted cost: 106.0
 	Actual cost: 101.8
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 21800 ns
+	Execution Time: 15400 ns
 	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 92.8
 	Actual cost: 92.8
@@ -1409,21 +1409,21 @@ Day: 64
 Day: 65
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 339300 ns
+	Execution Time: 223000 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road93e( 18.9 ) -> Road101e( 17.1 )
 	Predicted cost: 92.29999999999998
 	Actual cost: 90.79999999999998
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 13400 ns
+	Execution Time: 16200 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 95.3
 	Actual cost: 93.8
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 17300 ns
+	Execution Time: 15100 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
 	Predicted cost: 94.19999999999999
 	Actual cost: 94.19999999999999
@@ -1431,21 +1431,21 @@ Day: 65
 Day: 66
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 471100 ns
+	Execution Time: 190200 ns
 	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 100.25
 	Actual cost: 89.3
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 15300 ns
+	Execution Time: 10100 ns
 	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 100.25
 	Actual cost: 89.3
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 19500 ns
+	Execution Time: 13200 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 109.95
 	Actual cost: 109.95
@@ -1453,21 +1453,21 @@ Day: 66
 Day: 67
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 564300 ns
+	Execution Time: 202400 ns
 	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 92.9
 	Actual cost: 95.60000000000001
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 9700 ns
+	Execution Time: 13700 ns
 	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 100.5
 	Actual cost: 103.2
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 13600 ns
+	Execution Time: 14600 ns
 	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
 	Predicted cost: 96.1
 	Actual cost: 96.1
@@ -1475,21 +1475,21 @@ Day: 67
 Day: 68
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 476500 ns
+	Execution Time: 183900 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 28.0 )
 	Predicted cost: 91.0
 	Actual cost: 93.7
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 9200 ns
+	Execution Time: 10100 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 28.0 )
 	Predicted cost: 91.0
 	Actual cost: 93.7
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 20500 ns
+	Execution Time: 15200 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 109.95
 	Actual cost: 109.95
@@ -1497,21 +1497,21 @@ Day: 68
 Day: 69
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 261700 ns
+	Execution Time: 205200 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.80000000000001
 	Actual cost: 99.1
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 11600 ns
+	Execution Time: 12400 ns
 	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
 	Predicted cost: 104.60000000000001
 	Actual cost: 97.95
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 11200 ns
+	Execution Time: 13600 ns
 	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 99.1
 	Actual cost: 99.1
@@ -1519,21 +1519,21 @@ Day: 69
 Day: 70
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 257900 ns
+	Execution Time: 183800 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 97.7
 	Actual cost: 109.25
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 7600 ns
+	Execution Time: 9200 ns
 	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 100.75
 	Actual cost: 98.05
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 14700 ns
+	Execution Time: 12800 ns
 	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
 	Predicted cost: 109.25
 	Actual cost: 109.25
@@ -1541,21 +1541,21 @@ Day: 70
 Day: 71
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 330300 ns
+	Execution Time: 227400 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 95.2
 	Actual cost: 115.5
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 9900 ns
+	Execution Time: 12800 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 95.2
 	Actual cost: 115.5
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 17400 ns
+	Execution Time: 18600 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 119.6
 	Actual cost: 119.6
@@ -1563,21 +1563,21 @@ Day: 71
 Day: 72
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 835700 ns
+	Execution Time: 291400 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 100.65
 	Actual cost: 97.04999999999998
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 10000 ns
+	Execution Time: 23000 ns
 	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
 	Predicted cost: 101.5
 	Actual cost: 97.25
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 21400 ns
+	Execution Time: 22100 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 119.6
 	Actual cost: 119.6
@@ -1585,21 +1585,21 @@ Day: 72
 Day: 73
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 553900 ns
+	Execution Time: 213700 ns
 	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.4
 	Actual cost: 96.44999999999999
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 34500 ns
+	Execution Time: 62000 ns
 	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 103.3
 	Actual cost: 99.1
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 80900 ns
+	Execution Time: 17700 ns
 	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 107.35
 	Actual cost: 107.35
@@ -1607,21 +1607,21 @@ Day: 73
 Day: 74
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 265600 ns
+	Execution Time: 274100 ns
 	Road40e( 23.0 ) -> Road50e( 12.6 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 107.44999999999999
 	Actual cost: 99.4
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 15300 ns
+	Execution Time: 21900 ns
 	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 116.0
 	Actual cost: 105.05
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 20700 ns
+	Execution Time: 18600 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 119.6
 	Actual cost: 119.6
@@ -1629,21 +1629,21 @@ Day: 74
 Day: 75
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 268100 ns
+	Execution Time: 203300 ns
 	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
 	Predicted cost: 97.3
 	Actual cost: 102.15
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 10100 ns
+	Execution Time: 13000 ns
 	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 103.3
 	Actual cost: 110.05
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 18200 ns
+	Execution Time: 26600 ns
 	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 95.80000000000001
 	Actual cost: 95.80000000000001
@@ -1651,21 +1651,21 @@ Day: 75
 Day: 76
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 319000 ns
+	Execution Time: 267600 ns
 	Road40e( 23.0 ) -> Road50e( 12.6 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 108.35
 	Actual cost: 95.2
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 8700 ns
+	Execution Time: 14400 ns
 	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 109.0
 	Actual cost: 95.25
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 18800 ns
+	Execution Time: 20700 ns
 	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 109.95
 	Actual cost: 109.95
@@ -1673,21 +1673,21 @@ Day: 76
 Day: 77
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 267000 ns
+	Execution Time: 220300 ns
 	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 94.80000000000001
 	Actual cost: 107.85
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 11100 ns
+	Execution Time: 14600 ns
 	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
 	Predicted cost: 100.8
 	Actual cost: 111.75
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 14900 ns
+	Execution Time: 17100 ns
 	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 107.35
 	Actual cost: 107.35
@@ -1695,21 +1695,21 @@ Day: 77
 Day: 78
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 270300 ns
+	Execution Time: 194300 ns
 	Road40e( 20.7 ) -> Road50e( 14.0 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
 	Predicted cost: 106.55000000000001
 	Actual cost: 98.0
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 8000 ns
+	Execution Time: 12100 ns
 	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
 	Predicted cost: 119.75
 	Actual cost: 110.3
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 17400 ns
+	Execution Time: 15900 ns
 	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
 	Predicted cost: 119.6
 	Actual cost: 119.6
@@ -1717,21 +1717,21 @@ Day: 78
 Day: 79
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 337000 ns
+	Execution Time: 278600 ns
 	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 99.1
 	Actual cost: 99.1
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 40700 ns
+	Execution Time: 10300 ns
 	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
 	Predicted cost: 104.75
 	Actual cost: 99.05
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 14800 ns
+	Execution Time: 22000 ns
 	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
 	Predicted cost: 99.1
 	Actual cost: 99.1
@@ -1739,21 +1739,21 @@ Day: 79
 Day: 80
 <DIJKSTRA>
 	Visited Nodes: 35
-	Execution Time: 282900 ns
+	Execution Time: 296000 ns
 	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 92.7
 	Actual cost: 99.25
 
 <IDA*>
 	Visited Nodes: 27
-	Execution Time: 7100 ns
+	Execution Time: 6700 ns
 	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
 	Predicted cost: 94.55
 	Actual cost: 97.25
 
 <LRTA*>
 	Visited Nodes: 4
-	Execution Time: 15000 ns
+	Execution Time: 22400 ns
 	Road36e( 33.0 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
 	Predicted cost: 113.25
 	Actual cost: 113.25

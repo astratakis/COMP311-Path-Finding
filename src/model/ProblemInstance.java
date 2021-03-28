@@ -14,8 +14,19 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author astratakis
+ * @author dpetrou
+ * 
+ * Contains all the data to be tested.
+ */
 public class ProblemInstance {
 
+	/**
+	 * Creates a new instance with a given set of data written in a file.
+	 * @param scanner The file reader
+	 * @throws IllegalArgumentException If the file is in wrong format.
+	 */
 	public ProblemInstance(Scanner scanner) throws IllegalArgumentException {
 		Pattern p = Pattern.compile("(<.+>)(.*)(</.+>)");
 		Matcher m = p.matcher(scanner.next());
@@ -108,6 +119,12 @@ public class ProblemInstance {
 		this.destination = graph.nodes.get(destination);
 	}
 	
+	/**
+	 * Initialized the day predictions.
+	 * @param scanner The file reader.
+	 * @param ID The number of the day.
+	 * @return The day with all the data initialized.
+	 */
 	private Day initializeDayPredictions(Scanner scanner, int ID) {
 		String line = scanner.nextLine();	// Consume <Day>
 
@@ -149,6 +166,10 @@ public class ProblemInstance {
 		return d;
 	}
 	
+	/**
+	 * Initialized the actual traffic of the day.
+	 * @param scanner The file scanner.
+	 */
 	private void initializeDayActuals(Scanner scanner) {
 		
 		for (int i=0; i<days.size(); i++) {
@@ -200,6 +221,12 @@ public class ProblemInstance {
 		return days;
 	}
 	
+	/**
+	 * Calculates the smallest paths from a starting node to all other nodes in a graph.
+	 * @param source The starting node.
+	 * @param day The day that will be used for the predictions.
+	 * @return The result of the algorithm.
+	 */
 	private Result dijkstra(Node source, Day day) {
 		source.smallestDistance = 0;
 		
@@ -277,6 +304,12 @@ public class ProblemInstance {
 		return result;
 	}
 	
+	/**
+	 * Transforms a list of nodes into a list of roads.
+	 * @param nodePath The list of nodes
+	 * @param d The day that will be used for predictions.
+	 * @return The final road path.
+	 */
 	private LinkedList<Road> findRoadPath(LinkedList<Node> nodePath, Day d){
 		
 		LinkedList<Road> roadPath = new LinkedList<Road>();
@@ -313,6 +346,10 @@ public class ProblemInstance {
 		return roadPath;
 	}
 	
+	/**
+	 * Finds the cheapest roads from all the neighbor nodes of each node in a given day.
+	 * @param day The day to check
+	 */
 	private void findCheapestNeighbors(Day day) {
 		
 		for(Node n:  graph.nodes.values()) {
@@ -330,6 +367,9 @@ public class ProblemInstance {
 		}
 	}
 	
+	/**
+	 * Runs simulation.
+	 */
 	public void simulate() {
 		
 		PathFinder lrdastar = new LearingRealTimeAstar(graph);

@@ -11,10 +11,24 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author astratakis
+ * @author dpetrou
+ * 
+ * Implementation of the IDA* algorithm.
+ */
 public class IterativeDeepeningAstar implements PathFinder {
 
+	/**
+	 * Convention that found equals negative infinity.
+	 */
 	private final static double FOUND = Double.NEGATIVE_INFINITY;
 	
+	/**
+	 * 
+	 * @param graph
+	 * @param destination
+	 */
 	public IterativeDeepeningAstar(Graph graph, Node destination) {
 		this.graph = graph;
 		
