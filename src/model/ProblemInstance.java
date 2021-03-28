@@ -1,11 +1,16 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -84,7 +89,7 @@ public class ProblemInstance {
 		
 		scanner.nextLine();
 		
-		graph = new Graph(nodes, roads);
+		graph = new Graph(nodes, roads, roadNodes);
 		days = new ArrayList<Day>();
 		
 		int index = 0;
@@ -195,14 +200,155 @@ public class ProblemInstance {
 		return days;
 	}
 	
+	private Result dijkstra(Node source, Day day) {
+		source.smallestDistance = 0;
+		
+		Set<Node> visited = new HashSet<Node>();
+		LinkedList<Node> path = new LinkedList<Node>();
+		ArrayList<Double> weights = new ArrayList<Double>();
+		
+		int visitedNodes = 0;
+		
+		Node current = source;
+		
+		long start = System.nanoTime();
+		
+		while (true) {
+			
+			for (Node n : current.adjacencies) {
+				double distance = day.predictions.get(current.cheapestRoads.get(n));
+				
+				if (current.predecessor != null) {
+					distance += current.smallestDistance;
+				}
+				
+				if (distance < n.smallestDistance) {
+					n.predecessor = current;
+					n.smallestDistance = distance;
+				}
+			}
+			
+			visitedNodes++;
+			visited.add(current);
+			List<Node> toCheck = new ArrayList<Node>(graph.nodes.values());
+			toCheck.removeAll(visited);
+			try {
+				current = Collections.min(toCheck, new Comparator<Node>() {
+
+					@Override
+					public int compare(Node n1, Node n2) {
+						if(n1.smallestDistance > n2.smallestDistance) {
+							return 1;
+						}else if(n1.smallestDistance == n2.smallestDistance) {
+							return 0;
+						}
+						return -1;
+					}
+					
+				});
+			}
+			catch (Exception e) {
+				break;
+			}
+		}
+		
+		current = destination;
+		
+		while (!current.equals(source)) {
+			path.add(current);
+			current = current.predecessor;
+		}
+		path.add(source);
+		
+		double realCost = 0.0;
+		
+		LinkedList<Road> roadPath = new LinkedList<Road>();
+		Collections.reverse(path);
+		roadPath = findRoadPath(path, day);
+		
+		long end = System.nanoTime();
+		
+		for(Road r: roadPath) {
+			realCost += day.actual.get(r);
+			weights.add(day.predictions.get(r));
+		}
+		
+		Result result = new Result("DIJKSTRA", visitedNodes, end - start, roadPath, weights, destination.smallestDistance, realCost);
+		return result;
+	}
+	
+	private LinkedList<Road> findRoadPath(LinkedList<Node> nodePath, Day d){
+		
+		LinkedList<Road> roadPath = new LinkedList<Road>();
+		
+		for(int i=0; i<nodePath.size(); i++) {
+			
+			if(nodePath.isEmpty() || i+1 >= nodePath.size()) {
+				break;
+			}
+			
+			Node n1 = nodePath.get(i);
+			Node n2 = nodePath.get(i+1);
+			
+			Node[] nodeArray = {n1,n2};
+			HashSet<Node> setToSearch = new HashSet<Node>(Arrays.asList(nodeArray));
+			
+			Road r = Collections.min(graph.roadNodes.get(setToSearch), new Comparator<Road>() {
+
+				@Override
+				public int compare(Road r1, Road r2) {
+					if (d.predictions.get(r1) > d.predictions.get(r2)) {
+						return 1;
+					}
+					else if (d.predictions.get(r1) == d.predictions.get(r2)) {
+						return 0;
+					}
+					return -1;
+				}
+				
+			});
+						
+			roadPath.add(r);			
+		}
+		return roadPath;
+	}
+	
+	private void findCheapestNeighbors(Day day) {
+		
+		for(Node n:  graph.nodes.values()) {
+			for(Road r : n.neighbors.keySet()) {
+				if(!n.cheapestRoads.containsKey(n.neighbors.get(r))) {
+					n.cheapestRoads.put(n.neighbors.get(r), r);
+				}else {
+					Road existing = n.cheapestRoads.get(n.neighbors.get(r));
+					
+					if(day.predictions.get(existing) > day.predictions.get(r)){
+						n.cheapestRoads.put(n.neighbors.get(r),r);
+					}
+				}
+			}
+		}
+	}
+	
 	public void simulate() {
 		
 		PathFinder lrdastar = new LearingRealTimeAstar(graph);
+		PathFinder idastar = new IterativeDeepeningAstar(graph, destination);
 		
 		for (Day d : days) {
-			Result r = lrdastar.execute(source, destination, d);
-			System.out.println(r);
-			d.results.add(r);
+			System.out.println("Day: " + d.ID);
+			findCheapestNeighbors(d);
+			graph.resetNodes();
+			Result r1 = dijkstra(source, d);
+			//Result r2 = idastar.execute(source, destination, d);
+			Result r3 = lrdastar.execute(source, destination, d);
+			d.results.add(r1);
+			//d.results.add(r2);
+			d.results.add(r3);
+			
+			for (Result r : d.results) {
+				System.out.println(r);
+			}
 		}
 	}
 }

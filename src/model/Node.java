@@ -28,6 +28,8 @@ public class Node {
 		neighbors = new HashMap<Road, Node>();
 		adjacencies = new ArrayList<Node>();
 		roads = new ArrayList<Road>();
+		cheapestRoads = new HashMap<Node, Road>();
+		predecessor = null;
 	}
 	
 	/**
