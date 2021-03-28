@@ -37,5 +37,6 @@ public class Console {
 		
 		DataExtractor data = new DataExtractor(pi);
 		data.exportFullData("output.txt");
+		data.exportExel("exel.txt");
 	}
 }

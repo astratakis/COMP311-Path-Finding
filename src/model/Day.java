@@ -29,7 +29,7 @@ public class Day {
 	/**
 	 * The identity of the day.
 	 */
-	final int ID;
+	public final int ID;
 	
 	/**
 	 * The traffic predictions of this day.

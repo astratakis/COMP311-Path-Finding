@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -22,6 +24,10 @@ public class Node {
 		
 		// set smallest distance to predecessor = infinity
 		smallestDistance = Double.POSITIVE_INFINITY;
+		
+		neighbors = new HashMap<Road, Node>();
+		adjacencies = new ArrayList<Node>();
+		roads = new ArrayList<Road>();
 	}
 	
 	/**
@@ -45,6 +51,8 @@ public class Node {
 	 * the roads with the smallest weights are used by the path finding algorithms.
 	 */
 	Map<Node, Road> cheapestRoads;
+	
+	List<Road> roads;
 	
 	/**
 	 * The nearest predecessor of the node.

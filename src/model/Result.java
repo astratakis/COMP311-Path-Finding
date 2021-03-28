@@ -28,17 +28,17 @@ public final class Result {
 	/**
 	 * The name of the algorithm that was used to create this result.
 	 */
-	final String algorithmName;
+	public final String algorithmName;
 	
 	/**
 	 * The number of visited Nodes.
 	 */
-	final int visitedNodes;
+	public final int visitedNodes;
 	
 	/**
 	 * The execution time of the algorithm in nanoseconds.
 	 */
-	final long executionTime;
+	public final long executionTime;
 	
 	/**
 	 * The final road path created by the algorithm.
@@ -53,18 +53,18 @@ public final class Result {
 	/**
 	 * The predicted cost of the route. It is produced by the traffic predictions of the given day.
 	 */
-	final double predictedCost;
+	public final double predictedCost;
 	
 	/**
 	 * The actual cost of the route. It is produced by the actual traffic of the given day.
 	 */
-	final double actualCost;
+	public final double actualCost;
 	
 	/**
 	 * The produced result.
 	 */
 	private final String result;
-	
+
 	/**
 	 * It builds the output result.
 	 * @return The final result.
@@ -74,7 +74,7 @@ public final class Result {
 		
 		buffer.append("<" + algorithmName + ">\n");
 		buffer.append("\tVisited Nodes: " + visitedNodes + "\n");
-		buffer.append("\tExecution Time: " + (executionTime < 1_000_000 ? executionTime + " ns" : executionTime / 1_000_000 + " ms") + "\n");
+		buffer.append("\tExecution Time: " + (executionTime < 1_000_000 ? executionTime + " ns" : executionTime / 1_000_000 + " ms") + "\n\t");
 		
 		for (int i=0; i<roadPath.size(); i++) {
 			buffer.append(roadPath.get(i) + "( " + weights.get(i) + " )");
@@ -84,6 +84,9 @@ public final class Result {
 		}
 		
 		buffer.append("\n");
+		
+		buffer.append("\tPredicted cost: " + predictedCost + "\n");
+		buffer.append("\tActual cost: " + actualCost + "\n");
 		
 		return buffer.toString();
 	}
