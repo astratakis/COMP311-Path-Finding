@@ -340,10 +340,10 @@ public class ProblemInstance {
 			findCheapestNeighbors(d);
 			graph.resetNodes();
 			Result r1 = dijkstra(source, d);
-			//Result r2 = idastar.execute(source, destination, d);
+			Result r2 = idastar.execute(source, destination, d);
 			Result r3 = lrdastar.execute(source, destination, d);
 			d.results.add(r1);
-			//d.results.add(r2);
+			d.results.add(r2);
 			d.results.add(r3);
 			
 			for (Result r : d.results) {

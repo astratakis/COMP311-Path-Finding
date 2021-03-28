@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -20,7 +21,6 @@ public class IterativeDeepeningAstar implements PathFinder {
 		heuristics = new HashMap<Node, Double>();
 		this.graph.resetNodes();
 		visitedNodes = 0;
-		cost = 0.0;
 		
 		// initialize heuristics
 		findCheapestNeighbors();
@@ -34,7 +34,6 @@ public class IterativeDeepeningAstar implements PathFinder {
 	private final Graph graph;
 	
 	private int visitedNodes;
-	private double cost;
 	private LinkedList<Node> nodePath;
 	private ArrayList<Double> weights;
 	private LinkedList<Road> roadPath;
@@ -48,7 +47,6 @@ public class IterativeDeepeningAstar implements PathFinder {
 		
 		double bound = heuristics.get(source);
 		nodePath = new LinkedList<Node>();
-		roadPath = new LinkedList<Road>();
 		weights = new ArrayList<Double>();
 		
 		long start = System.nanoTime();
@@ -72,9 +70,54 @@ public class IterativeDeepeningAstar implements PathFinder {
 		long end = System.nanoTime();
 		
 		double actualCost = 0.0;
+		double predictedCost = 0.0;
 		
-		Result result = new Result("IDA*", visitedNodes, end - start, roadPath, weights, cost, actualCost);
+		roadPath = findRoadPath(nodePath, day);
+		
+		for (Road r : roadPath) {
+			weights.add(day.predictions.get(r));
+			predictedCost += day.predictions.get(r);
+			actualCost += day.actual.get(r);
+		}
+		
+		Result result = new Result("IDA*", visitedNodes, end - start, roadPath, weights, predictedCost, actualCost);
 		return result;
+	}
+	
+	private LinkedList<Road> findRoadPath(LinkedList<Node> nodePath, Day d){
+		
+		LinkedList<Road> roadPath = new LinkedList<Road>();
+		
+		for(int i=0; i<nodePath.size(); i++) {
+			
+			if(nodePath.isEmpty() || i+1 >= nodePath.size()) {
+				break;
+			}
+			
+			Node n1 = nodePath.get(i);
+			Node n2 = nodePath.get(i+1);
+			
+			Node[] nodeArray = {n1,n2};
+			HashSet<Node> setToSearch = new HashSet<Node>(Arrays.asList(nodeArray));
+			
+			Road r = Collections.min(graph.roadNodes.get(setToSearch), new Comparator<Road>() {
+
+				@Override
+				public int compare(Road r1, Road r2) {
+					if (d.predictions.get(r1) > d.predictions.get(r2)) {
+						return 1;
+					}
+					else if (d.predictions.get(r1) == d.predictions.get(r2)) {
+						return 0;
+					}
+					return -1;
+				}
+				
+			});
+						
+			roadPath.add(r);			
+		}
+		return roadPath;
 	}
 	
 	private double search(double cost, double bound, Node destination) {
@@ -133,7 +176,6 @@ public class IterativeDeepeningAstar implements PathFinder {
 				}
 			}
 			
-			visitedNodes++;
 			visited.add(current);
 			List<Node> toCheck = new ArrayList<Node>(graph.nodes.values());
 			toCheck.removeAll(visited);
