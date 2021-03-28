@@ -1,80 +1,1760 @@
-1,LRTA*,19,432400,750.35, 
-2,LRTA*,18,179500,807.5, 
-3,LRTA*,22,395100,897.7, 
-4,LRTA*,17,122000,568.15, 
-5,LRTA*,8,58000,295.45, 
-6,LRTA*,14,127300,709.25, 
-7,LRTA*,9,97000,394.2, 
-8,LRTA*,7,36500,280.75, 
-9,LRTA*,7,86300,274.2, 
-10,LRTA*,5,116600,170.7, 
-11,LRTA*,6,83100,208.04999999999998, 
-12,LRTA*,13,50100,415.34999999999997, 
-13,LRTA*,6,63000,254.0, 
-14,LRTA*,6,45800,173.54999999999998, 
-15,LRTA*,5,59400,179.35, 
-16,LRTA*,5,49500,170.7, 
-17,LRTA*,5,39000,170.7, 
-18,LRTA*,5,146100,167.0, 
-19,LRTA*,5,46700,176.04999999999998, 
-20,LRTA*,5,102100,164.79999999999998, 
-21,LRTA*,5,28200,187.0, 
-22,LRTA*,5,29800,197.0, 
-23,LRTA*,7,39100,312.75, 
-24,LRTA*,5,24700,185.5, 
-25,LRTA*,6,34100,214.75, 
-26,LRTA*,7,38000,261.5, 
-27,LRTA*,5,29700,192.5, 
-28,LRTA*,5,23200,187.6, 
-29,LRTA*,5,52300,166.2, 
-30,LRTA*,5,34800,174.0, 
-31,LRTA*,5,121000,194.5, 
-32,LRTA*,5,48700,182.25, 
-33,LRTA*,5,68800,174.0, 
-34,LRTA*,5,30000,177.35, 
-35,LRTA*,5,35100,174.0, 
-36,LRTA*,5,96700,178.25, 
-37,LRTA*,5,49200,185.45, 
-38,LRTA*,5,35500,171.85, 
-39,LRTA*,5,56500,178.75, 
-40,LRTA*,5,37500,166.2, 
-41,LRTA*,5,80100,184.25, 
-42,LRTA*,5,61400,168.1, 
-43,LRTA*,5,72300,181.95, 
-44,LRTA*,5,72500,164.79999999999998, 
-45,LRTA*,5,73000,174.05, 
-46,LRTA*,5,26000,174.0, 
-47,LRTA*,5,33400,182.25, 
-48,LRTA*,5,15500,163.6, 
-49,LRTA*,5,17300,197.0, 
-50,LRTA*,5,47200,164.79999999999998, 
-51,LRTA*,5,38800,185.25, 
-52,LRTA*,5,36900,170.7, 
-53,LRTA*,5,38900,192.5, 
-54,LRTA*,5,24100,177.75, 
-55,LRTA*,5,24100,185.25, 
-56,LRTA*,5,29200,168.14999999999998, 
-57,LRTA*,5,58600,169.5, 
-58,LRTA*,5,28200,182.25, 
-59,LRTA*,5,52300,174.0, 
-60,LRTA*,5,28000,169.5, 
-61,LRTA*,5,45400,163.6, 
-62,LRTA*,5,28000,180.55, 
-63,LRTA*,5,24700,193.5, 
-64,LRTA*,5,27200,164.79999999999998, 
-65,LRTA*,5,29700,171.85, 
-66,LRTA*,5,32200,185.45, 
-67,LRTA*,5,30500,205.95, 
-68,LRTA*,5,39700,167.0, 
-69,LRTA*,5,33200,167.0, 
-70,LRTA*,5,52800,169.5, 
-71,LRTA*,5,17800,177.75, 
-72,LRTA*,5,17500,179.35, 
-73,LRTA*,5,38100,168.1, 
-74,LRTA*,5,38200,182.25, 
-75,LRTA*,5,39100,179.35, 
-76,LRTA*,5,34300,200.0, 
-77,LRTA*,5,36200,177.35, 
-78,LRTA*,5,39000,164.79999999999998, 
-79,LRTA*,5,36100,170.7, 
-80,LRTA*,5,34000,168.1, 
+Day: 1
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 3 ms
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
+	Predicted cost: 91.4
+	Actual cost: 100.85000000000001
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 74800 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
+	Predicted cost: 91.4
+	Actual cost: 100.85000000000001
+
+<LRTA*>
+	Visited Nodes: 23
+	Execution Time: 177300 ns
+	Road39e( 33.0 ) -> Road8e( 63.0 ) -> Road3e( 38.7 ) -> Road28e( 21.6 ) -> Road34e( 36.0 ) -> Road12e( 28.0 ) -> Road17e( 15.0 ) -> Road49e( 55.0 ) -> Road147e( 12.0 ) -> Road113e( 86.25 ) -> Road131e( 22.5 ) -> Road117e( 12.6 ) -> Road118e( 17.5 ) -> Road134e( 44.1 ) -> Road139e( 10.8 ) -> Road132e( 56.25 ) -> Road125e( 60.3 ) -> Road154e( 75.0 ) -> Road76e( 53.0 ) -> Road79e( 41.4 ) -> Road77e( 38.0 ) -> Road97e( 63.9 )
+	Predicted cost: 883.8999999999999
+	Actual cost: 883.8999999999999
+
+Day: 2
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 627400 ns
+	Road14e( 17.0 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 107.65
+	Actual cost: 100.9
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 42100 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 35.0 )
+	Predicted cost: 114.4
+	Actual cost: 107.65
+
+<LRTA*>
+	Visited Nodes: 7
+	Execution Time: 29200 ns
+	Road142e( 9.0 ) -> Road57e( 8.75 ) -> Road59e( 71.25 ) -> Road148e( 45.0 ) -> Road90e( 17.5 ) -> Road100e( 47.0 )
+	Predicted cost: 198.5
+	Actual cost: 198.5
+
+Day: 3
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 626300 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.7
+	Actual cost: 101.0
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 41800 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 98.0
+	Actual cost: 95.3
+
+<LRTA*>
+	Visited Nodes: 6
+	Execution Time: 27400 ns
+	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road93e( 21.0 ) -> Road81e( 90.0 ) -> Road84e( 77.5 )
+	Predicted cost: 270.5
+	Actual cost: 270.5
+
+Day: 4
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 613800 ns
+	Road142e( 10.0 ) -> Road57e( 7.0 ) -> Road149e( 23.4 ) -> Road84e( 62.0 )
+	Predicted cost: 102.4
+	Actual cost: 96.19999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 46100 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 105.7
+	Actual cost: 97.25
+
+<LRTA*>
+	Visited Nodes: 9
+	Execution Time: 40900 ns
+	Road142e( 10.0 ) -> Road62e( 65.0 ) -> Road65e( 25.0 ) -> Road65e( 25.0 ) -> Road66e( 45.0 ) -> Road148e( 32.4 ) -> Road85e( 48.0 ) -> Road89e( 25.2 )
+	Predicted cost: 275.6
+	Actual cost: 275.6
+
+Day: 5
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 526400 ns
+	Road142e( 10.0 ) -> Road57e( 6.3 ) -> Road149e( 23.4 ) -> Road84e( 55.8 )
+	Predicted cost: 95.5
+	Actual cost: 104.15
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 187900 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 98.05
+	Actual cost: 95.3
+
+<LRTA*>
+	Visited Nodes: 14
+	Execution Time: 248200 ns
+	Road40e( 23.0 ) -> Road20e( 9.9 ) -> Road20e( 9.9 ) -> Road20e( 9.9 ) -> Road12e( 35.0 ) -> Road22e( 58.0 ) -> Road28e( 21.6 ) -> Road9e( 33.3 ) -> Road6e( 48.75 ) -> Road40e( 23.0 ) -> Road45e( 69.0 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 409.34999999999997
+	Actual cost: 409.34999999999997
+
+Day: 6
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 621400 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 102.44999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 39300 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 101.75
+	Actual cost: 111.5
+
+<LRTA*>
+	Visited Nodes: 5
+	Execution Time: 30600 ns
+	Road143e( 64.0 ) -> Road148e( 32.4 ) -> Road91e( 34.2 ) -> Road101e( 17.1 )
+	Predicted cost: 147.70000000000002
+	Actual cost: 147.70000000000002
+
+Day: 7
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 536900 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 107.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 60600 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
+	Predicted cost: 112.0
+	Actual cost: 104.7
+
+<LRTA*>
+	Visited Nodes: 7
+	Execution Time: 31000 ns
+	Road37e( 32.4 ) -> Road25e( 13.0 ) -> Road26e( 70.2 ) -> Road42e( 23.4 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 205.1
+	Actual cost: 205.1
+
+Day: 8
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 519300 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road93e( 26.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.5
+	Actual cost: 123.75
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 48100 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
+	Predicted cost: 113.0
+	Actual cost: 122.5
+
+<LRTA*>
+	Visited Nodes: 5
+	Execution Time: 29300 ns
+	Road13e( 57.6 ) -> Road15e( 32.4 ) -> Road144e( 61.25 ) -> Road101e( 23.75 )
+	Predicted cost: 175.0
+	Actual cost: 175.0
+
+Day: 9
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 439400 ns
+	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road149e( 26.0 ) -> Road84e( 55.8 )
+	Predicted cost: 97.8
+	Actual cost: 104.0
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 53700 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 107.5
+	Actual cost: 98.05
+
+<LRTA*>
+	Visited Nodes: 8
+	Execution Time: 55800 ns
+	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road58e( 87.5 ) -> Road70e( 18.0 ) -> Road148e( 32.4 ) -> Road91e( 38.0 ) -> Road101e( 17.1 )
+	Predicted cost: 209.0
+	Actual cost: 209.0
+
+Day: 10
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 539100 ns
+	Road37e( 32.4 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 95.60000000000001
+	Actual cost: 92.9
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 1 ms
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 97.25
+	Actual cost: 90.8
+
+<LRTA*>
+	Visited Nodes: 6
+	Execution Time: 207500 ns
+	Road37e( 32.4 ) -> Road47e( 11.0 ) -> Road44e( 57.6 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 169.0
+	Actual cost: 169.0
+
+Day: 11
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 434700 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 109.95
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 87600 ns
+	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 103.2
+	Actual cost: 103.2
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 18800 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.95
+	Actual cost: 109.95
+
+Day: 12
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 386800 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 98.0
+	Actual cost: 95.3
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 28600 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 98.0
+	Actual cost: 95.3
+
+<LRTA*>
+	Visited Nodes: 9
+	Execution Time: 36000 ns
+	Road146e( 40.0 ) -> Road132e( 56.25 ) -> Road139e( 15.0 ) -> Road120e( 77.0 ) -> Road122e( 76.25 ) -> Road141e( 86.25 ) -> Road152e( 31.5 ) -> Road89e( 28.0 )
+	Predicted cost: 410.25
+	Actual cost: 410.25
+
+Day: 13
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 411700 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 102.44999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 41300 ns
+	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
+	Predicted cost: 115.75
+	Actual cost: 118.25
+
+<LRTA*>
+	Visited Nodes: 6
+	Execution Time: 132900 ns
+	Road142e( 9.0 ) -> Road69e( 35.1 ) -> Road148e( 45.0 ) -> Road91e( 47.5 ) -> Road101e( 17.1 )
+	Predicted cost: 153.7
+	Actual cost: 153.7
+
+Day: 14
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 485400 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 90.9
+	Actual cost: 104.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 15500 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 94.55
+	Actual cost: 97.25
+
+<LRTA*>
+	Visited Nodes: 7
+	Execution Time: 34600 ns
+	Road31e( 24.0 ) -> Road33e( 27.9 ) -> Road7e( 7.2 ) -> Road7e( 7.2 ) -> Road145e( 27.0 ) -> Road94e( 57.0 )
+	Predicted cost: 150.3
+	Actual cost: 150.3
+
+Day: 15
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 394900 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 104.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 14100 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 101.75
+	Actual cost: 115.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 19400 ns
+	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 104.35
+	Actual cost: 104.35
+
+Day: 16
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 415400 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 102.44999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 21700 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 98.95
+	Actual cost: 92.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 20400 ns
+	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 102.44999999999999
+	Actual cost: 102.44999999999999
+
+Day: 17
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 475700 ns
+	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 92.9
+	Actual cost: 105.95
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 27000 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 95.25
+	Actual cost: 100.45
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 18500 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
+	Predicted cost: 114.0
+	Actual cost: 114.0
+
+Day: 18
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 597300 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road93e( 26.25 ) -> Road101e( 19.0 )
+	Predicted cost: 101.75
+	Actual cost: 100.94999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 13800 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 104.35
+	Actual cost: 101.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 25300 ns
+	Road36e( 33.0 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 113.25
+	Actual cost: 113.25
+
+Day: 19
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 1 ms
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 92.0
+	Actual cost: 98.75
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 31000 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 92.0
+	Actual cost: 98.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 48000 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.7
+	Actual cost: 97.7
+
+Day: 20
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 371000 ns
+	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 101.0
+	Actual cost: 104.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 6400 ns
+	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
+	Predicted cost: 112.7
+	Actual cost: 103.2
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 23200 ns
+	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 104.35
+	Actual cost: 104.35
+
+Day: 21
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 627700 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road93e( 18.9 ) -> Road101e( 17.1 )
+	Predicted cost: 100.25
+	Actual cost: 93.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 15700 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 28.0 )
+	Predicted cost: 102.15
+	Actual cost: 102.4
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 83500 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 95.80000000000001
+
+Day: 22
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 414600 ns
+	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 92.9
+	Actual cost: 92.9
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 24200 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 96.25
+	Actual cost: 96.25
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 16900 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 23
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 420500 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 93.9
+	Actual cost: 97.15
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 12100 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 97.55
+	Actual cost: 100.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 21600 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 95.80000000000001
+
+Day: 24
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 469200 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 99.55
+	Actual cost: 105.0
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 19000 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 99.55
+	Actual cost: 105.0
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 33800 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 109.25
+	Actual cost: 109.25
+
+Day: 25
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 474900 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 11.0 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
+	Predicted cost: 102.15
+	Actual cost: 98.65
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 5900 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
+	Predicted cost: 102.9
+	Actual cost: 95.65
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 12900 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 26
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 258400 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 104.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 6800 ns
+	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 103.3
+	Actual cost: 112.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 30200 ns
+	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 104.35
+	Actual cost: 104.35
+
+Day: 27
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 407400 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.5
+	Actual cost: 94.8
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 17500 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 103.5
+	Actual cost: 100.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 19800 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.95
+	Actual cost: 109.95
+
+Day: 28
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 477300 ns
+	Road40e( 20.7 ) -> Road50e( 12.6 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.69999999999999
+	Actual cost: 110.4
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10400 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 99.05
+	Actual cost: 102.3
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 20400 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
+	Predicted cost: 114.0
+	Actual cost: 114.0
+
+Day: 29
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 445700 ns
+	Road14e( 15.3 ) -> Road19e( 6.3 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 94.8
+	Actual cost: 97.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8900 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 97.35
+	Actual cost: 100.05
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 17400 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.7
+	Actual cost: 97.7
+
+Day: 30
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 468400 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 102.44999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9300 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
+	Predicted cost: 101.7
+	Actual cost: 104.7
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 16100 ns
+	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 102.44999999999999
+	Actual cost: 102.44999999999999
+
+Day: 31
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 349000 ns
+	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road149e( 23.4 ) -> Road84e( 62.0 )
+	Predicted cost: 101.4
+	Actual cost: 95.19999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9100 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 113.8
+	Actual cost: 104.35
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 20700 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 32
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 357900 ns
+	Road142e( 10.0 ) -> Road57e( 8.75 ) -> Road149e( 23.4 ) -> Road84e( 55.8 )
+	Predicted cost: 97.94999999999999
+	Actual cost: 113.25
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 7900 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 106.2
+	Actual cost: 96.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 18700 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 33
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 415800 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 91.19999999999999
+	Actual cost: 94.6
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9100 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 35.0 )
+	Predicted cost: 98.0
+	Actual cost: 99.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 16200 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 34
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 378800 ns
+	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 99.1
+	Actual cost: 95.80000000000001
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 12100 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 113.8
+	Actual cost: 94.55
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 15700 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 95.80000000000001
+
+Day: 35
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 357900 ns
+	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 99.1
+	Actual cost: 107.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 27400 ns
+	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 106.0
+	Actual cost: 103.2
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14900 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.35
+	Actual cost: 107.35
+
+Day: 36
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 430200 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 94.8
+	Actual cost: 107.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 23300 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 94.8
+	Actual cost: 107.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 17100 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 92.8
+	Actual cost: 92.8
+
+Day: 37
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 340600 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 90.8
+	Actual cost: 96.15
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8800 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 90.8
+	Actual cost: 96.15
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14700 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
+	Predicted cost: 114.0
+	Actual cost: 114.0
+
+Day: 38
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 310500 ns
+	Road40e( 20.7 ) -> Road50e( 12.6 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.69999999999999
+	Actual cost: 107.35
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8300 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 98.05
+	Actual cost: 100.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14100 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 95.80000000000001
+
+Day: 39
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 313500 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road93e( 18.9 ) -> Road101e( 19.0 )
+	Predicted cost: 92.5
+	Actual cost: 93.69999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 7200 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 100.6
+	Actual cost: 101.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14500 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 40
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 314200 ns
+	Road142e( 9.0 ) -> Road57e( 7.0 ) -> Road149e( 26.0 ) -> Road84e( 62.0 )
+	Predicted cost: 104.0
+	Actual cost: 118.8
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 12800 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 104.7
+	Actual cost: 107.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 15600 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 41
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 312600 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 94.55
+	Actual cost: 97.25
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9000 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 94.55
+	Actual cost: 97.25
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 28400 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 42
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 830500 ns
+	Road14e( 17.0 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 96.30000000000001
+	Actual cost: 99.0
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 15100 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 106.05
+	Actual cost: 108.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 27000 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 43
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 1 ms
+	Road37e( 32.4 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 99.4
+	Actual cost: 118.75
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 47300 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 105.0
+	Actual cost: 118.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 85900 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 109.25
+	Actual cost: 109.25
+
+Day: 44
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 450500 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 97.30000000000001
+	Actual cost: 95.69999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8600 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 107.05
+	Actual cost: 99.1
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 13400 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 45
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 319500 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 105.75
+	Actual cost: 97.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10000 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 111.75
+	Actual cost: 103.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 16100 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.95
+	Actual cost: 109.95
+
+Day: 46
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 261500 ns
+	Road37e( 36.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 103.0
+	Actual cost: 100.3
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 24000 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 105.0
+	Actual cost: 100.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 10800 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 47
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 304400 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 92.8
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 5100 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 105.0
+	Actual cost: 111.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14200 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 92.8
+	Actual cost: 92.8
+
+Day: 48
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 289500 ns
+	Road14e( 17.0 ) -> Road19e( 6.3 ) -> Road47e( 11.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 104.25
+	Actual cost: 100.25
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 7700 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 105.7
+	Actual cost: 93.7
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14400 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 108.05000000000001
+	Actual cost: 108.05000000000001
+
+Day: 49
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 323600 ns
+	Road142e( 10.0 ) -> Road57e( 7.0 ) -> Road149e( 23.4 ) -> Road84e( 55.8 )
+	Predicted cost: 96.19999999999999
+	Actual cost: 117.9
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8400 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 110.25
+	Actual cost: 108.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14200 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 109.25
+	Actual cost: 109.25
+
+Day: 50
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 327100 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 11.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 99.3
+	Actual cost: 106.05
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 7500 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 100.05
+	Actual cost: 106.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14400 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.7
+	Actual cost: 97.7
+
+Day: 51
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 294600 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 98.75
+	Actual cost: 97.95
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10400 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 98.75
+	Actual cost: 97.95
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 15500 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.35
+	Actual cost: 107.35
+
+Day: 52
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 332400 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 97.30000000000001
+	Actual cost: 96.30000000000001
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8900 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 100.05
+	Actual cost: 99.05
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 21700 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.35
+	Actual cost: 107.35
+
+Day: 53
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 389800 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 23.75 )
+	Predicted cost: 100.85
+	Actual cost: 97.55
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 12300 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 111.75
+	Actual cost: 102.3
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 16400 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 23.75 )
+	Predicted cost: 97.55
+	Actual cost: 97.55
+
+Day: 54
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 313000 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 95.2
+	Actual cost: 100.45
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8800 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 95.2
+	Actual cost: 100.45
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 16700 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 109.25
+	Actual cost: 109.25
+
+Day: 55
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 313300 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 90.9
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9400 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 103.5
+	Actual cost: 114.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 18500 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 90.9
+	Actual cost: 90.9
+
+Day: 56
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 369300 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 23.75 )
+	Predicted cost: 102.25
+	Actual cost: 112.55
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 14400 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 103.5
+	Actual cost: 98.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 19100 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 23.75 )
+	Predicted cost: 102.45
+	Actual cost: 102.45
+
+Day: 57
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 4 ms
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 99.85
+	Actual cost: 111.85
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 14800 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
+	Predicted cost: 100.7
+	Actual cost: 112.7
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 26200 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 119.6
+	Actual cost: 119.6
+
+Day: 58
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 466300 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 11.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
+	Predicted cost: 99.25
+	Actual cost: 98.15
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 12800 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
+	Predicted cost: 100.0
+	Actual cost: 94.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 21400 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 121.5
+	Actual cost: 121.5
+
+Day: 59
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 314900 ns
+	Road142e( 10.0 ) -> Road57e( 7.0 ) -> Road149e( 26.0 ) -> Road84e( 55.8 )
+	Predicted cost: 98.8
+	Actual cost: 120.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8600 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 101.95
+	Actual cost: 101.95
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 15200 ns
+	Road36e( 33.0 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 111.35
+	Actual cost: 111.35
+
+Day: 60
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 292700 ns
+	Road36e( 41.25 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 104.35
+	Actual cost: 96.1
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9900 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 109.0
+	Actual cost: 99.45
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 15600 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 96.1
+
+Day: 61
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 281700 ns
+	Road37e( 36.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 101.1
+	Actual cost: 105.05
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10700 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 13.75 ) -> Road89e( 35.0 )
+	Predicted cost: 112.0
+	Actual cost: 109.3
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14200 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 23.75 )
+	Predicted cost: 126.25
+	Actual cost: 126.25
+
+Day: 62
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 286900 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 90.9
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 7800 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 100.6
+	Actual cost: 113.4
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14900 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 90.9
+	Actual cost: 90.9
+
+Day: 63
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 314200 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 92.8
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10600 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 97.95
+	Actual cost: 97.95
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 15300 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 92.8
+	Actual cost: 92.8
+
+Day: 64
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 722100 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 92.8
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 14500 ns
+	Road14e( 17.0 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 106.0
+	Actual cost: 101.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 21800 ns
+	Road36e( 29.7 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 92.8
+	Actual cost: 92.8
+
+Day: 65
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 339300 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road93e( 18.9 ) -> Road101e( 17.1 )
+	Predicted cost: 92.29999999999998
+	Actual cost: 90.79999999999998
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 13400 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 95.3
+	Actual cost: 93.8
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 17300 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 17.1 )
+	Predicted cost: 94.19999999999999
+	Actual cost: 94.19999999999999
+
+Day: 66
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 471100 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 100.25
+	Actual cost: 89.3
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 15300 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 100.25
+	Actual cost: 89.3
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 19500 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.95
+	Actual cost: 109.95
+
+Day: 67
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 564300 ns
+	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 92.9
+	Actual cost: 95.60000000000001
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9700 ns
+	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 100.5
+	Actual cost: 103.2
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 13600 ns
+	Road36e( 33.0 ) -> Road144e( 44.1 ) -> Road101e( 19.0 )
+	Predicted cost: 96.1
+	Actual cost: 96.1
+
+Day: 68
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 476500 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 28.0 )
+	Predicted cost: 91.0
+	Actual cost: 93.7
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9200 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 9.9 ) -> Road89e( 28.0 )
+	Predicted cost: 91.0
+	Actual cost: 93.7
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 20500 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.95
+	Actual cost: 109.95
+
+Day: 69
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 261700 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 99.1
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 11600 ns
+	Road14e( 17.0 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 9.9 ) -> Road89e( 25.2 )
+	Predicted cost: 104.60000000000001
+	Actual cost: 97.95
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 11200 ns
+	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 99.1
+	Actual cost: 99.1
+
+Day: 70
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 257900 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.7
+	Actual cost: 109.25
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 7600 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 100.75
+	Actual cost: 98.05
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14700 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 19.0 )
+	Predicted cost: 109.25
+	Actual cost: 109.25
+
+Day: 71
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 330300 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 95.2
+	Actual cost: 115.5
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 9900 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 95.2
+	Actual cost: 115.5
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 17400 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 119.6
+	Actual cost: 119.6
+
+Day: 72
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 835700 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 100.65
+	Actual cost: 97.04999999999998
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10000 ns
+	Road14e( 15.3 ) -> Road17e( 13.5 ) -> Road145e( 33.75 ) -> Road86e( 13.75 ) -> Road89e( 25.2 )
+	Predicted cost: 101.5
+	Actual cost: 97.25
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 21400 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 119.6
+	Actual cost: 119.6
+
+Day: 73
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 553900 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.4
+	Actual cost: 96.44999999999999
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 34500 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 103.3
+	Actual cost: 99.1
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 80900 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.35
+	Actual cost: 107.35
+
+Day: 74
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 265600 ns
+	Road40e( 23.0 ) -> Road50e( 12.6 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.44999999999999
+	Actual cost: 99.4
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 15300 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 116.0
+	Actual cost: 105.05
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 20700 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 119.6
+	Actual cost: 119.6
+
+Day: 75
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 268100 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road93e( 21.0 ) -> Road101e( 19.0 )
+	Predicted cost: 97.3
+	Actual cost: 102.15
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 10100 ns
+	Road14e( 15.3 ) -> Road17e( 15.0 ) -> Road145e( 27.0 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 103.3
+	Actual cost: 110.05
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 18200 ns
+	Road36e( 29.7 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 95.80000000000001
+	Actual cost: 95.80000000000001
+
+Day: 76
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 319000 ns
+	Road40e( 23.0 ) -> Road50e( 12.6 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 108.35
+	Actual cost: 95.2
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8700 ns
+	Road14e( 21.25 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 109.0
+	Actual cost: 95.25
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 18800 ns
+	Road36e( 29.7 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 109.95
+	Actual cost: 109.95
+
+Day: 77
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 267000 ns
+	Road37e( 32.4 ) -> Road145e( 24.3 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 94.80000000000001
+	Actual cost: 107.85
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 11100 ns
+	Road14e( 21.25 ) -> Road17e( 13.5 ) -> Road145e( 24.3 ) -> Road86e( 13.75 ) -> Road89e( 28.0 )
+	Predicted cost: 100.8
+	Actual cost: 111.75
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14900 ns
+	Road36e( 41.25 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 107.35
+	Actual cost: 107.35
+
+Day: 78
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 270300 ns
+	Road40e( 20.7 ) -> Road50e( 14.0 ) -> Road145e( 33.75 ) -> Road93e( 21.0 ) -> Road101e( 17.1 )
+	Predicted cost: 106.55000000000001
+	Actual cost: 98.0
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 8000 ns
+	Road14e( 21.25 ) -> Road17e( 18.75 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 35.0 )
+	Predicted cost: 119.75
+	Actual cost: 110.3
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 17400 ns
+	Road36e( 41.25 ) -> Road144e( 61.25 ) -> Road101e( 17.1 )
+	Predicted cost: 119.6
+	Actual cost: 119.6
+
+Day: 79
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 337000 ns
+	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 99.1
+	Actual cost: 99.1
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 40700 ns
+	Road14e( 17.0 ) -> Road17e( 15.0 ) -> Road145e( 33.75 ) -> Road86e( 11.0 ) -> Road89e( 28.0 )
+	Predicted cost: 104.75
+	Actual cost: 99.05
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 14800 ns
+	Road36e( 33.0 ) -> Road144e( 49.0 ) -> Road101e( 17.1 )
+	Predicted cost: 99.1
+	Actual cost: 99.1
+
+Day: 80
+<DIJKSTRA>
+	Visited Nodes: 35
+	Execution Time: 282900 ns
+	Road14e( 15.3 ) -> Road19e( 7.0 ) -> Road47e( 9.9 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 92.7
+	Actual cost: 99.25
+
+<IDA*>
+	Visited Nodes: 27
+	Execution Time: 7100 ns
+	Road14e( 15.3 ) -> Road17e( 18.75 ) -> Road145e( 24.3 ) -> Road86e( 11.0 ) -> Road89e( 25.2 )
+	Predicted cost: 94.55
+	Actual cost: 97.25
+
+<LRTA*>
+	Visited Nodes: 4
+	Execution Time: 15000 ns
+	Road36e( 33.0 ) -> Road144e( 61.25 ) -> Road101e( 19.0 )
+	Predicted cost: 113.25
+	Actual cost: 113.25
+

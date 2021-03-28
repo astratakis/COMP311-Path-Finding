@@ -18,7 +18,7 @@ public class Console {
 	/**
 	 * The name of the file that will be used if the user runs the program with no arguments.
 	 */
-	final static String INPUT_FILE = "sampleGraph1.txt";
+	final static String INPUT_FILE = "sampleGraph3.txt";
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		
